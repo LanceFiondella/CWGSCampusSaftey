@@ -17,16 +17,17 @@
   "TUTORIAL_SKIP_BUTTON" : "Skip",
   "TUTORIAL_CONTINUE_BUTTON" : "Continue",
 
-  "TUTORIAL_SLIDE1_TITLE": "Welcome to the Ionic Super Starter",
-  "TUTORIAL_SLIDE1_DESCRIPTION": "The <b>Ionic Super Starter</b> is a fully-featured Ionic starter with many pre-built pages and best practices.",
+  "TUTORIAL_SLIDE1_TITLE": "University of Massachusetts: Dartmouth CWGS Campus Saftey",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "Our goal is to <b> end campus violence,</b> and provide resources & information to victims.",
 
-  "TUTORIAL_SLIDE2_TITLE": "How to use the Super Starter",
-  "TUTORIAL_SLIDE2_DESCRIPTION": "Assemble the various page types you want and remove the ones you don't. We've provided many common mobile app page layouts, like login and signup pages, tabs, and this tutorial page.",
+  "TUTORIAL_SLIDE2_TITLE": "We take sexual assault seriously.",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "With built in features such as emergency calling, and walk me home, we can help keep you out of harms way. Having this app in your arsenal lets you erridicate the fears of going out & enjoying our fine campus. <b>Calling directly through our app gets you help faster</b> by calling campus police directly.",
 
-  "TUTORIAL_SLIDE3_TITLE": "Getting Started",
-  "TUTORIAL_SLIDE3_DESCRIPTION": "Need help? Check out the Super Starter README for a full tutorial",
+  "TUTORIAL_SLIDE3_TITLE": "Educational Resources",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "We have provided answers to common questions regarding sexual assault to educate yourself. <b>We want to assure any victims that help of all kinds is nearby, and direct you to those resources.</b> Too often a victim feels trapped & alone, we are here to help, even if it feels minor.",
 
-  "TUTORIAL_SLIDE4_TITLE": "Ready to Play?",
+  "TUTORIAL_SLIDE4_TITLE": "Are you ready?",
+ "TUTORIAL_SLIDE4_DESCRIPTION": "We want to make our campus a <b>comfortable, safe, and fun</b> place to be. Knowing that your safe keeps your mind at peace.",
 
   "WELCOME_INTRO" : "The starting point for your next great Ionic app",
 

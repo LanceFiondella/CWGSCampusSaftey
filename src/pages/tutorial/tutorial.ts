@@ -8,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 
 export interface Slide {
+  id: number;
   title: string;
   description: string;
   image: string;
@@ -28,24 +29,35 @@ export class TutorialPage {
       "TUTORIAL_SLIDE2_DESCRIPTION",
       "TUTORIAL_SLIDE3_TITLE",
       "TUTORIAL_SLIDE3_DESCRIPTION",
+      "TUTORIAL_SLIDE4_TITLE",
+      "TUTORIAL_SLIDE4_DESCRIPTION"
     ]).subscribe(
       (values) => {
         console.log('Loaded values', values);
         this.slides = [
           {
+            id: 1,
             title: values.TUTORIAL_SLIDE1_TITLE,
             description: values.TUTORIAL_SLIDE1_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-1.png',
+            image: 'assets/img/umd_logo.png',
           },
           {
+            id:2,
             title: values.TUTORIAL_SLIDE2_TITLE,
             description: values.TUTORIAL_SLIDE2_DESCRIPTION,
             image: 'assets/img/ica-slidebox-img-2.png',
           },
           {
+            id:3,
             title: values.TUTORIAL_SLIDE3_TITLE,
             description: values.TUTORIAL_SLIDE3_DESCRIPTION,
             image: 'assets/img/ica-slidebox-img-3.png',
+          },
+          {
+            id:4,
+            title: values.TUTORIAL_SLIDE4_TITLE,
+            description: values.TUTORIAL_SLIDE4_DESCRIPTION,
+            image: 'assets/img/ica-slidebox-img-4.png',
           }
         ];
       });
