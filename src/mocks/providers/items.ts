@@ -9,7 +9,6 @@ export class Items {
 
   defaultItem: any = {
     "name": "Burt Bear",
-    "profilePic": "assets/img/speakers/bear.jpg",
     "about": "Burt is a Bear.",
   };
 
@@ -17,39 +16,32 @@ export class Items {
   constructor(public http: Http) {
     let items = [
       {
-        "name": "Burt Bear",
-        "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
+        "name": "What counts as sexual assault?",
+        "about": "..."
       },
       {
-        "name": "Charlie Cheetah",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
+        "name": "What is consent?",
+        "about": "..."
       },
       {
-        "name": "Donald Duck",
-        "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
+        "name": "Is it assault if it was my partner?",
+        "about": "..."
       },
       {
-        "name": "Eva Eagle",
-        "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
+        "name": "I have been assaulted, what do I do next?",
+        "about": ".."
       },
       {
-        "name": "Ellie Elephant",
-        "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
+        "name": "Is it safe to inform law enforcement",
+        "about": "..."
       },
       {
-        "name": "Molly Mouse",
-        "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Molly is a Mouse."
+        "name": "Where can I file a report?",
+        "about": "..."
       },
       {
-        "name": "Paul Puppy",
-        "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Paul is a Puppy."
+        "name": "etc",
+        "about": "..."
       }
     ];
 
