@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 
 import { CardsPage } from '../pages/cards/cards';
 import { ContentPage } from '../pages/content/content';
+import { HelpPage } from '../pages/help/help';
 import { ItemCreatePage } from '../pages/item-create/item-create';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
 import { ListMasterPage } from '../pages/list-master/list-master';
@@ -51,7 +52,9 @@ export function provideSettings(storage: Storage) {
     option1: true,
     option2: 'Ionitron J. Framework',
     option3: '3',
-    option4: 'Hello'
+    option4: 'John Doe',
+    option5: '19',
+    option6: 'Male'
   });
 }
 
@@ -67,6 +70,7 @@ let pages = [
   ContentPage,
   ItemCreatePage,
   ItemDetailPage,
+  HelpPage,
   ListMasterPage,
   //LoginPage,
   MapPage,

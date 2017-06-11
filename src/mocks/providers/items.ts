@@ -17,31 +17,31 @@ export class Items {
     let items = [
       {
         "name": "What counts as sexual assault?",
-        "about": "..."
+        "about": "answer here..."
       },
       {
         "name": "What is consent?",
-        "about": "..."
+        "about": "answer here..."
       },
       {
         "name": "Is it assault if it was my partner?",
-        "about": "..."
+        "about": "answer here..."
       },
       {
         "name": "I have been assaulted, what do I do next?",
-        "about": ".."
+        "about": "answer here..."
       },
       {
         "name": "Is it safe to inform law enforcement",
-        "about": "..."
+        "about": "answer here..."
       },
       {
         "name": "Where can I file a report?",
-        "about": "..."
+        "about": "answer here..."
       },
       {
         "name": "etc",
-        "about": "..."
+        "about": "answer here..."
       }
     ];
 
