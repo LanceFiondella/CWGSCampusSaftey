@@ -10,10 +10,10 @@ import { Items } from '../../providers/providers';
 import { Item } from '../../models/item';
 
 @Component({
-  selector: 'page-list-master',
-  templateUrl: 'list-master.html'
+  selector: 'resources-page-list-master',
+  templateUrl: 'resources-list-master.html'
 })
-export class ListMasterPage {
+export class ResourcesListMasterPage {
   currentItems: Item[];
 
   constructor(public navCtrl: NavController, public items: Items, public modalCtrl: ModalController) {

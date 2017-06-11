@@ -1,19 +1,15 @@
 <ion-header>
-
   <ion-navbar>
-    <ion-title>{{ 'LIST_MASTER_TITLE' | translate }}</ion-title>
-
+    <ion-title>{{ 'RESOURCES_LIST_MASTER_TITLE' | translate }}</ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="searchItem()">
         <ion-icon name="search"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
 <ion-content>
-
   <ion-list>
     <ion-item-sliding *ngFor="let item of currentItems">
       <button ion-item (click)="openItem(item)">
