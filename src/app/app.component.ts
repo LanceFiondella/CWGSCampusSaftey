@@ -9,6 +9,7 @@ import { ContentPage } from '../pages/content/content';
 import { FirstRunPage } from '../pages/pages';
 import { HelpPage } from '../pages/help/help';
 //import { LoginPage } from '../pages/login/login';
+import { MainPage } from '../pages/pages';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
 import { ResourcesListMasterPage } from '../pages/resources-list-master/resources-list-master';
@@ -25,7 +26,8 @@ import { Settings } from '../providers/providers';
 import { TranslateService } from '@ngx-translate/core'
 
 @Component({
-  template: `<ion-menu [content]="content">
+  template: `
+  <ion-menu [content]="content">
     <ion-header>
       <ion-toolbar>
         <ion-title>Pages</ion-title>
@@ -39,12 +41,12 @@ import { TranslateService } from '@ngx-translate/core'
         </button>
       </ion-list>
     </ion-content>
-
   </ion-menu>
-  <ion-nav #content [root]="rootPage"></ion-nav>`
+  <ion-nav id="nav" [root]="rootPage" #content></ion-nav>
+  `
 })
 export class MyApp {
-  rootPage = FirstRunPage;
+  rootPage: any;  
 
   @ViewChild(Nav) nav: Nav;
 
@@ -64,9 +66,17 @@ export class MyApp {
     { title: 'Settings', component: SettingsPage },
     { title: 'Search', component: SearchPage }
   ]
-
-  constructor(private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
+ 
+  constructor(private translate: TranslateService, private platform: Platform, public settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     this.initTranslate();
+    let self = this
+    self.settings.getValue("option1")
+      .then( (toggleOption) => {
+        if(toggleOption)
+          self.nav.setRoot(FirstRunPage);
+        else
+          self.nav.setRoot(MainPage);
+      })    
   }
 
   ionViewDidLoad() {

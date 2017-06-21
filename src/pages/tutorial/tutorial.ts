@@ -5,7 +5,7 @@ import { MenuController, NavController } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 import { TranslateService } from '@ngx-translate/core';
 
-
+import { Settings } from '../../providers/providers';
 
 export interface Slide {
   id: number;
@@ -22,7 +22,12 @@ export class TutorialPage {
   slides: Slide[];
   showSkip = true;
 
-  constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService) {
+  constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService, public settings: Settings) {
+    let self = this;
+    self.settings.load().then( () => {
+      self.settings.setValue("option1", false)
+    })
+
     translate.get(["TUTORIAL_SLIDE1_TITLE",
       "TUTORIAL_SLIDE1_DESCRIPTION",
       "TUTORIAL_SLIDE2_TITLE",
@@ -64,6 +69,7 @@ export class TutorialPage {
   }
 
   startApp() {
+    //this.settings.setValue("option1", false);
     this.navCtrl.setRoot(TabsPage, {}, {
       animate: true,
       direction: 'forward'

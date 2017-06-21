@@ -86,7 +86,6 @@ export class SettingsPage {
     this.settings.load().then(() => {
       this.settingsReady = true;
       this.options = this.settings.allSettings;
-
       this._buildForm();
     });
   }
