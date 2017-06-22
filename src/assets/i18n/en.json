@@ -8,9 +8,9 @@
   "LOGIN": "Sign in",
   "SIGNUP": "Sign up",
 
-  "TAB1_TITLE": "Resources",
-  "TAB2_TITLE": "HELP",
-  "TAB3_TITLE": "Survey",
+  "TAB1_TITLE": "HELP",
+  "TAB2_TITLE": "Resources",
+  "TAB3_TITLE": "Q & A",
   "TAB4_TITLE": "Settings",
 
   "MAP_TITLE": "Map",
@@ -74,5 +74,7 @@
 
   "HELP_TITLE": "Help",
   "EMERGENCY_HELP_BUTTON": "CALL 911",
-  "WALK_ME_HOME_BUTTON": "Walk Me Home"
+  "WALK_ME_HOME_BUTTON": "Walk Me Home",
+
+  "QUESTION_ANSWER_LIST_MASTER_TITLE": "Questions & Answers"
 }

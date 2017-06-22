@@ -4,6 +4,7 @@ import { SurveyListMasterPage} from './survey-list-master/survey-list-master';
 import { TabsPage } from './tabs/tabs';
 import { TutorialPage } from './tutorial/tutorial';
 import { HelpPage } from './help/help';
+import { QuestionAnswerListMasterPage } from './question-answer-list-master/question-answer-list-master'
 
 // The page the user lands on after opening the app and without a session
 export const FirstRunPage = TutorialPage;
@@ -13,7 +14,7 @@ export const FirstRunPage = TutorialPage;
 export const MainPage = TabsPage;
 
 // The initial root pages for our tabs (remove if not using tabs)
-export const Tab1Root = ResourcesListMasterPage;
-export const Tab2Root = HelpPage;
-export const Tab3Root = SurveyListMasterPage;
+export const Tab1Root = HelpPage;
+export const Tab2Root = ResourcesListMasterPage;
+export const Tab3Root = QuestionAnswerListMasterPage;
 export const Tab4Root = SettingsPage;

@@ -14,6 +14,7 @@ import { ItemDetailPage } from '../pages/item-detail/item-detail';
 //import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
+import { QuestionAnswerListMasterPage } from '../pages/question-answer-list-master/question-answer-list-master'
 import { ResourcesListMasterPage } from '../pages/resources-list-master/resources-list-master';
 import { SearchPage } from '../pages/search/search';
 import { SettingsPage } from '../pages/settings/settings';
@@ -75,6 +76,7 @@ let pages = [
   //LoginPage,
   MapPage,
   MenuPage,
+  QuestionAnswerListMasterPage,
   ResourcesListMasterPage,
   SearchPage,
   SettingsPage,

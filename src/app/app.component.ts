@@ -12,6 +12,7 @@ import { HelpPage } from '../pages/help/help';
 import { MainPage } from '../pages/pages';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
+import { QuestionAnswerListMasterPage } from '../pages/question-answer-list-master/question-answer-list-master';
 import { ResourcesListMasterPage } from '../pages/resources-list-master/resources-list-master';
 import { SearchPage } from '../pages/search/search';
 import { SettingsPage } from '../pages/settings/settings';
@@ -60,6 +61,7 @@ export class MyApp {
     //{ title: 'Login', component: LoginPage },
     //{ title: 'Signup', component: SignupPage },
     { title: 'Map', component: MapPage },
+    { title: 'Question Answer Master Detail', component: QuestionAnswerListMasterPage },
     { title: 'Resources Master Detail', component: ResourcesListMasterPage },
     { title: 'Survey Master Detail', component: SurveyListMasterPage},
     { title: 'Menu', component: MenuPage },
