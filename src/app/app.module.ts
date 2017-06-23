@@ -34,6 +34,7 @@ import { GoogleMaps } from '@ionic-native/google-maps';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
@@ -115,6 +116,7 @@ export function providers() {
   declarations: declarations(),
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpModule,
     TranslateModule.forRoot({
       loader: {
