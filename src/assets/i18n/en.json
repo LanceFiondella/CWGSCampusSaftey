@@ -33,7 +33,7 @@
   "WELCOME_INTRO" : "The starting point for your next great Ionic app",
 
   "SETTINGS_TITLE": "Settings",
-  "SETTINGS_OPTION1": "Turn intro page off/on.",
+  "SETTINGS_OPTION1": "Enable intro page",
   "SETTINGS_OPTION2": "Some Text",
   "SETTINGS_OPTION3": "Radio Example",
   "SETTINGS_OPTION4": "Your Name:",
@@ -76,5 +76,6 @@
   "EMERGENCY_HELP_BUTTON": "CALL 911",
   "WALK_ME_HOME_BUTTON": "Walk Me Home",
 
-  "QUESTION_ANSWER_LIST_MASTER_TITLE": "Questions & Answers"
+  "QUESTION_ANSWER_LIST_MASTER_TITLE": "Questions & Answers",
+  "RESOURCE_LIST_MASTER_TITLE": "Resources"
 }

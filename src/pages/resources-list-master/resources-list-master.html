@@ -1,22 +1,16 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>{{ 'RESOURCES_LIST_MASTER_TITLE' | translate }}</ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only (click)="searchItem()">
-        <ion-icon name="search"></ion-icon>
-      </button>
-    </ion-buttons>
+    <ion-title>{{ 'RESOURCE_LIST_MASTER_TITLE' | translate }}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <ion-item-sliding *ngFor="let item of currentItems">
-      <button ion-item (click)="openItem(item)">
-        <h2>{{item.name}}</h2>
-        <p>{{item.about}}</p>
-        <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
-      </button>
-    </ion-item-sliding>
+    <ion-item text-wrap padding *ngFor="let d of data" (click)="toggleDetails(d)"><ion-icon color="primary" item-right [name]="d.icon"></ion-icon>
+      {{d.title}}
+      <div style ="word-wrap: break-word; word-break: break-all; padding-left: 2em; padding-top: .5em;" *ngIf='d.visibleState === "visible"'>
+        {{d.details}}
+      </div>
+    </ion-item>
   </ion-list>
 </ion-content>
