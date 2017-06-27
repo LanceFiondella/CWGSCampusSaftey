@@ -1,3 +1,11 @@
-page-list-master {
-  
+resources-page-list-master {
+  .expanded-details{
+    word-wrap: break-word;
+    word-break: break-all;
+    padding-left: 2em;
+    padding-top: .5em;
+    p{
+      font-size: .7em;
+    }
+  }
 }
