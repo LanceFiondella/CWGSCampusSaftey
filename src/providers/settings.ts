@@ -1,3 +1,4 @@
+import { NgModule} from '@angular/core';
 import { Injectable } from '@angular/core';
 
 import { Storage } from '@ionic/storage';
@@ -5,6 +6,9 @@ import { Storage } from '@ionic/storage';
 /**
  * A simple settings/config class for storing key/value pairs with persistence.
  */
+@NgModule({
+  providers: [Storage]
+})
 @Injectable()
 export class Settings {
   private SETTINGS_KEY: string = '_settings';
@@ -59,7 +63,14 @@ export class Settings {
   getValue(key: string) {
     return this.storage.get(this.SETTINGS_KEY)
       .then(settings => {
-        return settings[key];
+        try{
+          return settings[key];
+        }
+        catch(e){
+          console.log("Unable to find settings! Resorting to defaults");
+          this.load();
+          return true; //return true so that tut page is always shown
+        }
       });
   }
 
