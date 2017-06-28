@@ -6,10 +6,11 @@
 
 <ion-content>
   <ion-list>
-    <ion-item text-wrap padding>
-      <ion-list *ngFor="let hostpital of resource[0]">
-        <ion-item><h1>{{resource[0].hospital.name}}</h1></ion-item>
-      </ion-list>
+    <ion-item text-wrap padding *ngFor="let d of data" (click)="toggleDetails(d)"><ion-icon color="primary" item-right [name]="d.icon"></ion-icon>
+      {{d.title}}
+      <div style ="word-wrap: break-word; word-break: break-all; padding-left: 2em; padding-top: .5em;" *ngIf='d.visibleState === "visible"'>
+        {{d.details}}
+      </div>
     </ion-item>
   </ion-list>
 </ion-content>

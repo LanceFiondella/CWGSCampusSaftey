@@ -10,7 +10,7 @@ import { SearchPage } from '../search/search';
 import { Items } from '../../providers/providers';
 
 import { Item } from '../../models/item';
-import { Resource } from '../../models/resource';
+import { Data } from '../../models/data';
 
 @Component({
   selector: 'resources-page-list-master',
@@ -23,46 +23,48 @@ import { Resource } from '../../models/resource';
       state('invisible', style({
         opacity: 0
       })),
-      transition('invisible => visible', animate('3.5s'))
+      transition('* => *', animate('.5s'))
     ])
   ]
 })
 export class ResourcesListMasterPage {
- hospitals: any[];
- police: any[];
- resourcesList: any[];
-
+  data: Data[] = [];
   constructor(public navCtrl: NavController) {
-    let hospitals = [
+    let data = [
       {
-        name:"Charlton Memorial Hospital",
-        address: "363 Highland Ave, Fall River, MA 02720",
-        phoneNumber: "(508) 679-3131",
-        description: "Best for when you just got hurt.",
+        title:"Local Hospitals",
+        details:"Hopped up on catnip use lap as chair groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked. Licks paws eat from dog's food or annoy kitten brother with poking toy mouse squeak roll over. Relentlessly pursues moth destroy the blinds love to play with owner's hair tie small kitty warm kitty little balls of fur for groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked fooled again thinking the dog likes me cough furball. Chase ball of string chase red laser dot but scratch leg; meow for can opener to feed me, get video posted to internet for chasing red dot stand in front of the computer screen.",
         icon:"ios-add-circle-outline",
         visibleState: 'invisible'
       },
       {
-        name:"St. Luke's Hospital",
-        address: "101 Page St, New Bedford, MA 02740",
-        phoneNumber: "(508) 997-1515",
-        description: "Best for when you just got hurt.",
+        title:"Local Police Station",
+        details:"lorem",
+        icon:"ios-add-circle-outline",
+        visibleState: 'invisible'
+      },
+      {
+        title:"Local Crisis Center",
+        details:"lorem",
+        icon:"ios-add-circle-outline",
+        visibleState: 'invisible'
+      },
+      {
+        title:"Local Counseling",
+        details:"lorem",
+        icon:"ios-add-circle-outline",
+        visibleState: 'invisible'
+      },
+      {
+        title:"UMD Sexual Assault Policy",
+        details:"lorem",
         icon:"ios-add-circle-outline",
         visibleState: 'invisible'
       }
-    ]
-    let police = [
-        {
-          name:"Tucker"
-        }
-    ]
-    let resourcesList = [
-      {
-        title: "Local Hospitals",
-        details: {hospitals}
-      }
-    ]
-    //vscode Icons
+    ];
+    for (let item of data) {
+      this.data.push(new Data(item));
+    }
   }
 
   toggleDetails(data) {
