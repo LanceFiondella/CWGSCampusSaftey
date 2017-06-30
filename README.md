@@ -1,9 +1,26 @@
-# CWGSCampusSaftey
-Umass Dartmouth's campus saftey app aiming to stop campus violence.
+This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
-## Pre-Requisites
-nodeJS
-https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm
+## How to use this template
 
-ionic and the ionic cli that can be found here
-https://www.npmjs.com/package/ionic
+*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+
+To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+
+### With the Ionic CLI:
+
+Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+
+```bash
+$ sudo npm install -g ionic cordova
+$ ionic start myBlank blank
+```
+
+Then, to run it, cd into `myBlank` and run:
+
+```bash
+$ ionic cordova platform add ios
+$ ionic cordova run ios
+```
+
+Substitute ios for android if not on a Mac.
+

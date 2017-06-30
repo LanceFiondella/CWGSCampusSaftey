@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'QUESTION_ANSWER_LIST_MASTER_TITLE' | translate }}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="searchQuestion()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let question of currentQuestions">
+      <button ion-item (click)="openQuestion(question)">
+        <h2>{{question.name}}</h2>
+        <p>{{question.about}}</p>
+        <ion-note item-end *ngIf="question.note">{{question.note}}</ion-note>
+      </button>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

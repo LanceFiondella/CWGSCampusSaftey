@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { MenuController, NavController } from 'ionic-angular';
 
-//import { WelcomePage } from '../welcome/welcome';
 import { TabsPage } from '../tabs/tabs';
 import { TranslateService } from '@ngx-translate/core';
 
-import { Settings } from '../../providers/providers';
+import { Settings } from '../../providers/settings';
 
 export interface Slide {
   id: number;

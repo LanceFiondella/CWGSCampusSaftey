@@ -1,40 +1,70 @@
-import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpModule, Http } from '@angular/http';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { Storage, IonicStorageModule } from '@ionic/storage';
-
-import { MyApp } from './app.component';
-
-import { CardsPage } from '../pages/cards/cards';
-import { ContentPage } from '../pages/content/content';
-import { HelpPage } from '../pages/help/help';
-import { ItemCreatePage } from '../pages/item-create/item-create';
-import { ItemDetailPage } from '../pages/item-detail/item-detail';
-//import { LoginPage } from '../pages/login/login';
-import { MapPage } from '../pages/map/map';
-import { MenuPage } from '../pages/menu/menu';
-import { QuestionAnswerListMasterPage } from '../pages/question-answer-list-master/question-answer-list-master'
-import { ResourcesListMasterPage } from '../pages/resources-list-master/resources-list-master';
-import { SearchPage } from '../pages/search/search';
-import { SettingsPage } from '../pages/settings/settings';
-//import { SignupPage } from '../pages/signup/signup';
-import { SurveyListMasterPage} from '../pages/survey-list-master/survey-list-master';
-import { TabsPage } from '../pages/tabs/tabs';
-import { TutorialPage } from '../pages/tutorial/tutorial';
-//import { WelcomePage } from '../pages/welcome/welcome';
-
-import { Api } from '../providers/api';
-import { Items } from '../mocks/providers/items';
-import { Settings } from '../providers/settings';
-import { User } from '../providers/user';
-
-import { Camera } from '@ionic-native/camera';
-import { GoogleMaps } from '@ionic-native/google-maps';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MyApp } from './app.component';
+import { TutorialPage } from './../pages/tutorial/tutorial';
+import { TabsPage } from './../pages/tabs/tabs';
+import { HelpPage } from './../pages/help/help';
+import { ResourceList } from './../pages/resources-list/resource-list';
+import { QuestionAnswerList} from './../pages/question-answer-list/question-answer-list';
+import { QuestionDetailPage } from './../pages/question-answer-list/question-detail/question-detail';
+import { SearchPage } from './../pages/question-answer-list/search/search';
+import { SettingsPage } from './../pages/settings/settings';
+
+import { Api } from '../providers/api';
+import { Questions } from './../providers/questions'
+
+let pages = [
+  MyApp,
+  TutorialPage,
+  TabsPage,
+  HelpPage,
+  ResourceList,
+  QuestionAnswerList,
+  QuestionDetailPage,
+  SearchPage,
+  SettingsPage
+]
+export function declarations(){
+  return pages;
+}
+export function entryComponents(){
+  return pages;
+}
+
+@NgModule({
+  declarations: declarations(),
+  imports: [
+    BrowserModule,
+    HttpModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [Http]
+      }
+    }),
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
+  ],
+  bootstrap: [IonicApp],
+  entryComponents: entryComponents(),
+  providers: [
+    StatusBar,
+    SplashScreen,
+    Api,
+    Questions,
+    { provide: Settings, useFactory: provideSettings, deps: [Storage] },
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
+  ]
+})
+export class AppModule {}
+
+//-------------------Stuff for i18n------------------------------------
+import { HttpModule,Http } from '@angular/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
@@ -43,6 +73,11 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 export function HttpLoaderFactory(http: Http) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
+
+
+//-------------------Stuff for settings---------------------------------
+import { Settings } from '../providers/settings';
+import { Storage, IonicStorageModule } from '@ionic/storage';
 
 export function provideSettings(storage: Storage) {
   /**
@@ -60,76 +95,3 @@ export function provideSettings(storage: Storage) {
     option6: 'Male'
   });
 }
-
-
-/**
- * The Pages array lists all of the pages we want to use in our app.
- * We then take these pages and inject them into our NgModule so Angular
- * can find them. As you add and remove pages, make sure to keep this list up to date.
- */
-let pages = [
-  MyApp,
-  CardsPage,
-  ContentPage,
-  ItemCreatePage,
-  ItemDetailPage,
-  HelpPage,
-  //LoginPage,
-  MapPage,
-  MenuPage,
-  QuestionAnswerListMasterPage,
-  ResourcesListMasterPage,
-  SearchPage,
-  SettingsPage,
-  //SignupPage,
-  SurveyListMasterPage,
-  TabsPage,
-  TutorialPage,
-  //WelcomePage
-];
-
-export function declarations() {
-  return pages;
-}
-
-export function entryComponents() {
-  return pages;
-}
-
-export function providers() {
-  return [
-    Api,
-    Items,
-    User,
-    Camera,
-    GoogleMaps,
-    SplashScreen,
-    StatusBar,
-
-    { provide: Settings, useFactory: provideSettings, deps: [Storage] },
-    // Keep this to enable Ionic's runtime error handling during development
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
-  ];
-}
-
-@NgModule({
-  declarations: declarations(),
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    HttpModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [Http]
-      }
-    }),
-    IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
-  ],
-  bootstrap: [IonicApp],
-  entryComponents: entryComponents(),
-  providers: providers()
-})
-export class AppModule { }
