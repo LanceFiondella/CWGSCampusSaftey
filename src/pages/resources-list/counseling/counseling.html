@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Counseling</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor='let counseling of counselingCollection'>
+    <ion-card-header text-center style='font-size: 20px; color:primary' text-wrap>{{ counseling.name }}</ion-card-header>
+    <ion-card-content text-center text-wrap>
+      <h2><b>Phone #:</b><br>{{ counseling.phone }}</h2>
+      <h2><b>Address:</b><br>{{ counseling.address }}</h2>
+      <h2><b>Hours:</b><br>{{ counseling.hours }}</h2>
+      <p><b>Description:</b><br>{{ counseling.desc }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

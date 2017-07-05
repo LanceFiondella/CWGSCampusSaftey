@@ -1,0 +1,17 @@
+<ion-header>  
+  <ion-navbar>
+    <ion-title>Local Hospitals</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor='let hospital of hospitalCollection'>
+    <ion-card-header text-center style='font-size: 20px; color:primary' text-wrap>{{ hospital.name }}</ion-card-header>
+    <ion-card-content text-center text-wrap>
+      <h2><b>Phone #:</b><br>{{ hospital.phone }}</h2>
+      <h2><b>Address:</b><br>{{ hospital.address }}</h2>
+      <h2><b>Hours:</b><br>{{ hospital.hours }}</h2>
+      <p><b>Description:</b><br>{{ hospital.desc }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

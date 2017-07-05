@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Reporting</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1 text-center>We want to help you.</h1>
+  <div wrap-text>
+    <p>The Victim Advocate provides free information, advocacy and support to any student who may be victims of sexual violence. This person is there to help you through any kind of criminal or student conduct proceeding, as well as assistance with reporting. The University of Massachusetts Dartmouth Victim Advocate maintains confidentiality. Your name and personal information will be kept confidential unless written permission is received to release the information to a third party or unless one of the following exceptions is met:</p>
+    <ul>
+      <li>Knowledge of suicidal or homicidal thoughts</li>
+      <li>Threat to the safety of the student/community</li>
+    </ul>
+  </div>
+  <div *ngFor='let reportingResources of reportingResourceCollection;'>
+    <ion-card *ngFor='let reportingResource of reportingResources.resources'>
+      <ion-title>{{ reportingResource.name }}</ion-title>
+    </ion-card>
+  </div>
+</ion-content>

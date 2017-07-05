@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>On Campus Help</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor='let resource of onCampusHelpCollection'>
+    <ion-card-header text-center style='font-size: 20px; color:primary' text-wrap>{{ resource.name }}</ion-card-header>
+    <ion-card-content text-center text-wrap>
+      <h2><b>Phone #:</b><br>{{ resource.phone }}</h2>
+      <h2><b>Location:</b><br>{{ resource.location }}</h2>
+      <h2><b>Hours:</b><br>{{ resource.hours }}</h2>
+      <p><b>Description:</b><br>{{ resource.desc }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
