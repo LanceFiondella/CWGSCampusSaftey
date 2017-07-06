@@ -15,7 +15,11 @@
   </div>
   <div *ngFor='let reportingResources of reportingResourceCollection;'>
     <ion-card *ngFor='let reportingResource of reportingResources.resources'>
-      <ion-title>{{ reportingResource.name }}</ion-title>
+      <ion-card-header text-center style='font-size: 20px; color:primary' text-wrap>{{ reportingResource.name }}</ion-card-header>
+      <ion-card-content text-center text-wrap>
+      <h2><b>Phone #:</b><br>{{ reportingResource.phone }}</h2>
+      <p><b>Description:</b><br>{{ reportingResource.desc }}</p>
+      </ion-card-content>
     </ion-card>
   </div>
 </ion-content>
