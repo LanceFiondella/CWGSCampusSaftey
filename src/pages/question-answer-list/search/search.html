@@ -11,8 +11,8 @@
   <ion-searchbar (ionInput)="getQuestions($event)" placeholder="{{ 'SEARCH_PLACEHOLDER' | translate }}"></ion-searchbar>
   <ion-list>
     <button ion-item (click)="openQuestion(question)" *ngFor="let question of currentQuestions">
-      <h2>{{question.name}}</h2>
-      <p>{{question.about}}</p>
+      <h2>{{question.question}}</h2>
+      <p>{{question.answer}}</p>
       <ion-note item-end *ngIf="question.note">{{question.note}}</ion-note>
     </button>
   </ion-list>

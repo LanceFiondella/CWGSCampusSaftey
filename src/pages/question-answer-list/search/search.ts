@@ -27,7 +27,7 @@ export class SearchPage {
       return;
     }
     this.currentQuestions = this.questions.query({
-      name: val
+      question: val
     });
   }
 

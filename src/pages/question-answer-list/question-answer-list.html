@@ -13,8 +13,8 @@
   <ion-list>
     <ion-item-sliding *ngFor="let question of currentQuestions">
       <button ion-item (click)="openQuestion(question)">
-        <h2>{{question.name}}</h2>
-        <p>{{question.about}}</p>
+        <h2>{{question.question}}</h2>
+        <p>{{question.answer}}</p>
         <ion-note item-end *ngIf="question.note">{{question.note}}</ion-note>
       </button>
     </ion-item-sliding>

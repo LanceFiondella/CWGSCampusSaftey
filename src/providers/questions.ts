@@ -2,42 +2,14 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 
 import { Question } from '../models/question';
+import questionData from '../models/question-data'
 
 @Injectable()
 export class Questions {
   questions: Question[] = [];
 
   constructor(public http: Http) {
-    let questions = [
-      {
-        "name": "What counts as sexual assault?",
-        "about": "answer here..."
-      },
-      {
-        "name": "What is consent?",
-        "about": "answer here..."
-      },
-      {
-        "name": "Is it assault if it was my partner?",
-        "about": "answer here..."
-      },
-      {
-        "name": "I have been assaulted, what do I do next?",
-        "about": "answer here..."
-      },
-      {
-        "name": "Is it safe to inform law enforcement",
-        "about": "answer here..."
-      },
-      {
-        "name": "Where can I file a report?",
-        "about": "answer here..."
-      },
-      {
-        "name": "etc",
-        "about": "answer here..."
-      }
-    ];
+    let questions = questionData;
 
     for (let question of questions) {
       this.questions.push(new Question(question));
