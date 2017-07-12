@@ -13,4 +13,7 @@ export class HospitalPage implements OnInit {
   ngOnInit(){
     this.hospitalCollection = hospitals;
   }
+  onOpenDialer(name: string){
+    return "tel:" + name;
+  }
 }
