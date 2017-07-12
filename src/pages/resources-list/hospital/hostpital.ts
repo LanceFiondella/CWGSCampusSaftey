@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NativeDeviceFeatures } from './../../../providers/native-device-features';
+
 import { Hospital } from './../../../models/resources-list/hospital.interface';
 import hospitals from './../../../models/resources-list/hospital-data'
 
@@ -7,13 +9,11 @@ import hospitals from './../../../models/resources-list/hospital-data'
   selector: 'page-hospital',
   templateUrl: 'hospital.html'
 })
-export class HospitalPage implements OnInit {
+export class HospitalPage{
   hospitalCollection: Hospital[];
-
-  ngOnInit(){
+  
+  constructor(private nativeDeviceFeatures:NativeDeviceFeatures) {
     this.hospitalCollection = hospitals;
   }
-  onOpenDialer(name: string){
-    return "tel:" + name;
-  }
+
 }

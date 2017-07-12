@@ -21,6 +21,7 @@ import { SettingsPage } from './../pages/settings/settings';
 
 import { Api } from '../providers/api';
 import { Questions } from './../providers/questions'
+import { NativeDeviceFeatures } from './../providers/native-device-features';
 
 let pages = [
   MyApp,
@@ -66,6 +67,7 @@ export function entryComponents(){
     StatusBar,
     SplashScreen,
     Api,
+    NativeDeviceFeatures,
     Questions,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     { provide: ErrorHandler, useClass: IonicErrorHandler }

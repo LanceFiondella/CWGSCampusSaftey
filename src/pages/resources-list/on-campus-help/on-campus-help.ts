@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NativeDeviceFeatures } from './../../../providers/native-device-features';
+
 import { OnCampusHelp } from './../../../models/resources-list/on-campus-help.interface';
 import onCampusHelpResources from './../../../models/resources-list/on-campus-help-data'
 @Component({
@@ -7,10 +9,11 @@ import onCampusHelpResources from './../../../models/resources-list/on-campus-he
   templateUrl: 'on-campus-help.html'
 })
 
-export class OnCampusHelpPage implements OnInit{
+export class OnCampusHelpPage{
   onCampusHelpCollection: OnCampusHelp[];
   
-  ngOnInit(){
+  constructor(private nativeDeviceFeatures:NativeDeviceFeatures){
     this.onCampusHelpCollection = onCampusHelpResources;
   }
+
 }

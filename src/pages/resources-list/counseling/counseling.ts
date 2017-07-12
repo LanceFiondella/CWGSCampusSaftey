@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NativeDeviceFeatures } from './../../../providers/native-device-features';
+
 import { Counseling } from './../../../models/resources-list/counseling.interface';
 import counselingResources from './../../../models/resources-list/counseling-data';
 
@@ -8,10 +10,11 @@ import counselingResources from './../../../models/resources-list/counseling-dat
   templateUrl: 'counseling.html'
 })
 
-export class CounselingPage implements OnInit{
+export class CounselingPage{
   counselingCollection: Counseling[];
   
-  ngOnInit(){
+  constructor(private nativeDeviceFeatures:NativeDeviceFeatures){
     this.counselingCollection = counselingResources;
   }
+
 }

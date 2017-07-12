@@ -17,7 +17,7 @@
     <ion-card *ngFor='let reportingResource of reportingResources.resources'>
       <ion-card-header text-center style='font-size: 20px; color:primary' text-wrap>{{ reportingResource.name }}</ion-card-header>
       <ion-card-content text-center text-wrap>
-      <h2><b>Phone #:</b><br>{{ reportingResource.phone }}</h2>
+      <h2><b>Phone #:</b><br><a [href]="this.nativeDeviceFeatures.onOpenDialer(reportingResource.phone)">{{ reportingResource.phone }}</a></h2>
       <p><b>Description:</b><br>{{ reportingResource.desc }}</p>
       </ion-card-content>
     </ion-card>

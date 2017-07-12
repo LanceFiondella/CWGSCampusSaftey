@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NativeDeviceFeatures } from './../../../providers/native-device-features';
 
 import { ReportingResource } from './../../../models/resources-list/reporting-resource.interface';
 import reportingData from './../../../models/resources-list/reporting-data';
@@ -9,10 +10,10 @@ import reportingData from './../../../models/resources-list/reporting-data';
   templateUrl: 'reporting.html'
 })
 
-export class ReportingPage implements OnInit{
+export class ReportingPage{
   reportingResourceCollection: {category: string, resources: ReportingResource[]}[];
 
-  ngOnInit(){
+  constructor(private nativeDeviceFeatures:NativeDeviceFeatures){
     this.reportingResourceCollection = reportingData;
   }
 }

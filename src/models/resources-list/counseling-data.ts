@@ -8,7 +8,7 @@ export default [
   },
   {
     name: 'The Women\'s Center Inc',
-    phone: '508.999.6636',
+    phone: '(508) 999-6636',
     address:'405 County Street New Bedford, MA 02740',
     hours: '24-hour hotline',
     desc: 'The Women\'s Center provides free and confidential 24-hour easily accessible services to those in need. We provide counseling, education, outreach, referrals and resources. We may be called the Women\'s center, but we serve men and children as well.'
