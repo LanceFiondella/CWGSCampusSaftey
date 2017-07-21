@@ -9,7 +9,7 @@
     <ion-card-header text-center style='font-size: 20px; color:primary' text-wrap>{{ policeStation.name }}</ion-card-header>
     <ion-card-content text-center text-wrap>
       <h2><b>Phone #:</b><br><a [href]="this.nativeDeviceFeatures.onOpenDialer(policeStation.phone)">{{ policeStation.phone }}</a></h2>
-      <h2><b>Address:</b><br>{{ policeStation.address }}</h2>
+      <h2><b>Address:</b><br><a [href]="this.nativeDeviceFeatures.onOpenMaps(policeStation.address)">{{ policeStation.address }}</a></h2>
       <p><b>Description:</b><br>{{ policeStation.desc }}</p>
     </ion-card-content>
   </ion-card>

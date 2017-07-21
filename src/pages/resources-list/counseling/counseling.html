@@ -9,7 +9,7 @@
     <ion-card-header text-center style='font-size: 20px; color:primary' text-wrap>{{ counseling.name }}</ion-card-header>
     <ion-card-content text-center text-wrap>
       <h2><b>Phone #:</b><br><a [href]="this.nativeDeviceFeatures.onOpenDialer(counseling.phone)">{{ counseling.phone }}</a></h2>
-      <h2><b>Address:</b><br>{{ counseling.address }}</h2>
+      <h2><b>Address:</b><br><a [href]="this.nativeDeviceFeatures.onOpenMaps(counseling.address)">{{ counseling.address }}</a></h2>
       <h2><b>Hours:</b><br>{{ counseling.hours }}</h2>
       <p><b>Description:</b><br>{{ counseling.desc }}</p>
     </ion-card-content>
