@@ -3,7 +3,6 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
 import { MyApp } from './app.component';
 import { TutorialPage } from './../pages/tutorial/tutorial';
 import { TabsPage } from './../pages/tabs/tabs';
@@ -50,12 +49,12 @@ export function entryComponents(){
   declarations: declarations(),
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [Http]
+        deps: [HttpClient]
       }
     }),
     IonicModule.forRoot(MyApp),
@@ -76,13 +75,13 @@ export function entryComponents(){
 export class AppModule {}
 
 //-------------------Stuff for i18n------------------------------------
-import { HttpModule,Http } from '@angular/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
-export function HttpLoaderFactory(http: Http) {
+export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
