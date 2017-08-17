@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 import { Question } from '../models/question';
 import questionData from '../models/question-data'
@@ -8,7 +8,7 @@ import questionData from '../models/question-data'
 export class Questions {
   questions: Question[] = [];
 
-  constructor(public http: Http) {
+  constructor(public http: HttpClient) {
     let questions = questionData;
 
     for (let question of questions) {
