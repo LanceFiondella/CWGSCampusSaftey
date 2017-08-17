@@ -32,8 +32,6 @@ export class SettingsPage {
   pageTitleKey: string = 'SETTINGS_TITLE';
   pageTitle: string;
 
-  subSettings: any = SettingsPage;
-
   constructor(public navCtrl: NavController,
     public settings: Settings,
     public formBuilder: FormBuilder,
@@ -44,23 +42,10 @@ export class SettingsPage {
   _buildForm() {
     let group: any = {
       option1: [this.options.option1],
-      option3: [this.options.option3]
-    };
-
-    switch (this.page) {
-      case 'main':
-        break;
-      case 'profile':
-        group = {
-          option4: [this.options.option4],
-          option5: [this.options.option5],
-          option6: [this.options.option6]
-        };
-        break;
     }
     this.form = this.formBuilder.group(group);
 
-    // Watch the form for changes, and
+    // Watch the form for changes
     this.form.valueChanges.subscribe((v) => {
       this.settings.merge(this.form.value);
     });

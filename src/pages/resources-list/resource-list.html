@@ -1,5 +1,10 @@
 <ion-header>  
   <ion-navbar>
+    <ion-buttons end>
+        <button ion-button [navPush]='settingsPage'>
+          <ion-icon name='cog'></ion-icon>
+        </button>
+    </ion-buttons>
     <ion-title>Resources</ion-title>
   </ion-navbar>
 </ion-header>
@@ -14,7 +19,6 @@
       <li>You are entitled to emotional support</li>
       <li>You have a right to confidentiality</li>
       <li>It is your right to decide what to do</li>
-      <li>Law enforcement is on your side</li>
       <li>Please seek medical attention within 72 hours to ensure your safe</li>
     </ul>
   <ion-list>

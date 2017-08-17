@@ -1,6 +1,8 @@
 import { NavController } from 'ionic-angular';
 import { Component } from '@angular/core';
 
+
+import { SettingsPage } from './../settings/settings';
 import { PoliceStationPage } from './police-station/police-station';
 import { HospitalPage } from './hospital/hostpital';
 import { CounselingPage } from './counseling/counseling';
@@ -14,6 +16,7 @@ import { ReportingPage } from './reporting/reporting';
 })
 
 export class ResourceList{
+  settingsPage = SettingsPage;
   hospitalPage = HospitalPage;
   policeStationPage = PoliceStationPage;
   onCampusHelpPage = OnCampusHelpPage;
