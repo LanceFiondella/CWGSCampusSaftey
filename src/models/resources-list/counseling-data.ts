@@ -1,7 +1,7 @@
 export default [
   {
     name: 'UMass Dartmouth Counseling Center',
-    phone: '(508) 999-8648',
+    phone: '(508) 999-8650',
     address: 'UMass Dartmouth: Auditorium Annex between the main auditorium and the Liberal Arts building',
     hours: 'Mon-Fri 8am-5pm',
     desc: 'The Counseling Center provides a range of services to help students develop improved coping skills to address emotional, interpersonal and academic concerns. The Counseling Center provides individual, couples and group counseling, and psychiatric services.'

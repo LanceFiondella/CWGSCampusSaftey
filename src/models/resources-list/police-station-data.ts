@@ -3,14 +3,13 @@ export default [
     name: 'UMass Dartmouth: Department of Public Saftey',
     address: '285 Old Westport Road - Power Plant Building, Dartmouth, MA, 02747',
     phone: '(508) 999-9191',
-    desc: 'Best when on campus.'
-
+    desc: 'Best when on campus. If it is not an emergency, call (508) 999-8107'
   },
   {
     name: 'Dartmouth Police Department',
     address: '249 Russells Mills Rd, South Dartmouth, MA 02748',
     phone: '(508) 910-1700',
-    desc: 'Best if off campus but still in dartmouth.'
+    desc: 'Best if off campus but still in Dartmouth.'
   },
   {
     name: 'Massachusetts State Police',

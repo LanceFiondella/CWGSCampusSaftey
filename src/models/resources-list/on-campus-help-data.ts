@@ -3,8 +3,8 @@ export default [
     name: 'Center for Women, Gender & Sexuality',
     phone: '(508) 910-6567',
     location: 'Campus Center, Suite 207',
-    hours: 'Mon-Fri 8am-5pm',
-    desc: 'The Center for Women, Gender & Sexuality offers resources and support on women’s and LGBT issues.  In addition, it coordinates campus initiatives to prevent sexual assault and intimate partner violence. CWGS is a voice for women and the lesbian, gay, bisexual, and trans community, with the purpose of eliminating barriers, diminishing prejudices, and creating a supportive climate and space for all.'
+    hours: 'Mon-Fri 9am-5pm',
+    desc: 'The best option if you\'re a victim, because your case is kept confidential. The Center for Women, Gender & Sexuality offers resources and support on women’s and LGBT issues.  In addition, it coordinates campus initiatives to prevent sexual assault and intimate partner violence. CWGS is a voice for women and the lesbian, gay, bisexual, and trans community, with the purpose of eliminating barriers, diminishing prejudices, and creating a supportive climate and space for all.'
   },
   {
     name: 'Counseling Center',
