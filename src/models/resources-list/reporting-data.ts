@@ -28,11 +28,6 @@ export default [
         desc: 'Dartmouth\'s police department direct line, you can file a report here if the event happend here.',
       },
       {
-        name: 'Fall River Police Department',
-        phone: '(508) 676-8511',
-        desc: 'Fall River\'s police department direct line, you can file a report here if the event happend here.',
-      },
-      {
         name: 'New Bedford Police Department',
         phone: '(508) 991-6340',
         desc: 'New Bedford\'s police department direct line, you can file a report here if the event happend here.',
