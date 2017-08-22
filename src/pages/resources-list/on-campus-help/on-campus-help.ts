@@ -15,5 +15,4 @@ export class OnCampusHelpPage{
   constructor(private nativeDeviceFeatures:NativeDeviceFeatures){
     this.onCampusHelpCollection = onCampusHelpResources;
   }
-
 }
