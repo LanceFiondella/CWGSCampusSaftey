@@ -47,6 +47,7 @@
         <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
     </platform>
     <platform name="ios">
+        <preference name="StatusBarStyle" value="default" />
         <allow-navigation href="tel:*" launch-external="yes" />
         <allow-navigation href="maps:*" launch-external="yes" />
         <allow-intent href="itms:*" />
