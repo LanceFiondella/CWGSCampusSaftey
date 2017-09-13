@@ -1,9 +1,12 @@
+//Angular / Ionic
 import { Component } from '@angular/core';
-import { MenuController, NavController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
+//Pages
 import { TabsPage } from '../tabs/tabs';
 import { TranslateService } from '@ngx-translate/core';
 
+//Services
 import { Settings } from '../../providers/settings';
 
 export interface Slide {
@@ -19,15 +22,15 @@ export interface Slide {
 })
 export class TutorialPage {
   slides: Slide[];
-  showSkip = true;
-
-  constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService, public settings: Settings) {
-    let self = this;
-    self.settings.load().then( () => {
-      self.settings.setValue("option1", false)
-    })
-
-    translate.get(["TUTORIAL_SLIDE1_TITLE",
+  
+  constructor(public navCtrl: NavController, translate: TranslateService, public settings: Settings) {
+    //Change the "enable intro page" setting to false, so that this page is only the root this one time
+    this.settings.load()
+    .then( () => {
+      this.settings.setValue("enableIntroPage", false)
+    });
+    translate.get([
+      "TUTORIAL_SLIDE1_TITLE",
       "TUTORIAL_SLIDE1_DESCRIPTION",
       "TUTORIAL_SLIDE2_TITLE",
       "TUTORIAL_SLIDE2_DESCRIPTION",
@@ -37,7 +40,6 @@ export class TutorialPage {
       "TUTORIAL_SLIDE4_DESCRIPTION"
     ]).subscribe(
       (values) => {
-        console.log('Loaded values', values);
         this.slides = [
           {
             id: 1,
@@ -68,25 +70,10 @@ export class TutorialPage {
   }
 
   startApp() {
-    //this.settings.setValue("option1", false);
     this.navCtrl.setRoot(TabsPage, {}, {
       animate: true,
       direction: 'forward'
     });
-  }
-
-  onSlideChangeStart(slider) {
-    this.showSkip = !slider.isEnd;
-  }
-
-  ionViewDidEnter() {
-    // the root left menu should be disabled on the tutorial page
-    this.menu.enable(false);
-  }
-
-  ionViewWillLeave() {
-    // enable the root left menu when leaving the tutorial page
-    this.menu.enable(true);
   }
 
 }

@@ -1,7 +1,6 @@
 import { NavController } from 'ionic-angular';
 import { Component } from '@angular/core';
 
-
 import { SettingsPage } from './../settings/settings';
 import { PoliceStationPage } from './police-station/police-station';
 import { HospitalPage } from './hospital/hostpital';

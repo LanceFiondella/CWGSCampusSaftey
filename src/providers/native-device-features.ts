@@ -10,18 +10,18 @@ export class NativeDeviceFeatures {
     
   }
 
-  onOpenDialer(phoneNumber: string){
+  onOpenDialer(phoneNumber: string) {
     return "tel:" + phoneNumber;
   }
 
-  onOpenMaps(location: string){
+  onOpenMaps(location: string) {
     let temp = "";
 
-    if(this.platform.is("ios")){
+    if(this.platform.is("ios")) {
       temp = "maps:?q=" + location;
       return this.sanitizer.bypassSecurityTrustUrl(temp);
     } 
-    else{
+    else {
       temp = "geo:?q=" + location;
       return this.sanitizer.bypassSecurityTrustUrl(temp);
     }

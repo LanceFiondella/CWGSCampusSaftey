@@ -1,41 +1,43 @@
+//Angular / Ionic
 import { Component, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Platform, Nav, Config } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+//Pages
 import { TutorialPage } from './../pages/tutorial/tutorial';
 import { TabsPage } from './../pages/tabs/tabs';
 
+//Services
 import { Settings } from './../providers/settings';
 
 @Component({
   template: `
-  <ion-nav id="nav" [root]="rootPage" #content></ion-nav>
+  <ion-nav id="nav" [root]="rootPage"></ion-nav>
   `
 })
 
 export class MyApp {
   rootPage:any;
 
-  @ViewChild(Nav) nav: Nav;
+  @ViewChild(Nav) nav: Nav; //Use ViewChild to access nav methods such as setRoot
 
   constructor(private translate: TranslateService, private platform: Platform, public settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
-    this.initTranslate();
-    let self = this
-    self.settings.getValue("option1")
+    this.initTranslate(); //for i18n
+    //Change root page based on "enable intro page" setting, which by defauly starts as true
+    this.settings.getValue("enableIntroPage")
       .then( (toggleOption) => {
         if(toggleOption)
-          self.nav.setRoot(TutorialPage);
+          this.nav.setRoot(TutorialPage);
         else
-          self.nav.setRoot(TabsPage);
+          this.nav.setRoot(TabsPage);
       })    
   }
 
   ionViewDidLoad() {
-    this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
+    this.platform.ready()
+    .then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
@@ -56,4 +58,3 @@ export class MyApp {
     });
   }
 }
-

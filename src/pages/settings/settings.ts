@@ -6,10 +6,9 @@ import { Settings } from '../../providers/settings';
 
 import { TranslateService } from '@ngx-translate/core';
 
-/**
+/*
  * The Settings page is a simple form that syncs with a Settings provider
  * to enable the user to customize settings for the app.
- *
  */
 @Component({
   selector: 'page-settings',
@@ -23,16 +22,12 @@ export class SettingsPage {
 
   form: FormGroup;
 
-  profileSettings = {
-    page: 'profile',
-    pageTitleKey: 'SETTINGS_PAGE_PROFILE'
-  };
-
   page: string = 'main';
   pageTitleKey: string = 'SETTINGS_TITLE';
   pageTitle: string;
 
-  constructor(public navCtrl: NavController,
+  constructor(
+    public navCtrl: NavController,
     public settings: Settings,
     public formBuilder: FormBuilder,
     public navParams: NavParams,
@@ -41,14 +36,15 @@ export class SettingsPage {
 
   _buildForm() {
     let group: any = {
-      option1: [this.options.option1],
+      enableIntroPage: [this.options.enableIntroPage],
     }
     this.form = this.formBuilder.group(group);
 
     // Watch the form for changes
-    this.form.valueChanges.subscribe((v) => {
-      this.settings.merge(this.form.value);
-    });
+    this.form.valueChanges
+      .subscribe( (v) => {
+        this.settings.merge(this.form.value);
+      });
   }
 
   ionViewDidLoad() {
@@ -63,15 +59,17 @@ export class SettingsPage {
     this.page = this.navParams.get('page') || this.page;
     this.pageTitleKey = this.navParams.get('pageTitleKey') || this.pageTitleKey;
 
-    this.translate.get(this.pageTitleKey).subscribe((res) => {
-      this.pageTitle = res;
+    this.translate.get(this.pageTitleKey)
+      .subscribe((res) => {
+        this.pageTitle = res;
     })
 
-    this.settings.load().then(() => {
-      this.settingsReady = true;
-      this.options = this.settings.allSettings;
-      this._buildForm();
-    });
+    this.settings.load()
+      .then(() => {
+        this.settingsReady = true;
+        this.options = this.settings.allSettings;
+        this._buildForm();
+      });
   }
 
   ngOnChanges() {

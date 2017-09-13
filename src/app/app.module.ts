@@ -1,8 +1,17 @@
+//Angular / Ionic
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+  //for user settings
+import { Storage, IonicStorageModule } from '@ionic/storage';
+  //i18n
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+//Pages
 import { MyApp } from './app.component';
 import { TutorialPage } from './../pages/tutorial/tutorial';
 import { TabsPage } from './../pages/tabs/tabs';
@@ -18,8 +27,10 @@ import { QuestionDetailPage } from './../pages/question-answer-list/question-det
 import { SearchPage } from './../pages/question-answer-list/search/search';
 import { SettingsPage } from './../pages/settings/settings';
 
+//Services
 import { Api } from '../providers/api';
 import { Questions } from './../providers/questions'
+import { Settings } from '../providers/settings';
 import { NativeDeviceFeatures } from './../providers/native-device-features';
 
 let pages = [
@@ -38,10 +49,12 @@ let pages = [
   SearchPage,
   SettingsPage
 ]
-export function declarations(){
+
+export function declarations() {
   return pages;
 }
-export function entryComponents(){
+
+export function entryComponents() {
   return pages;
 }
 
@@ -72,32 +85,17 @@ export function entryComponents(){
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
+
 export class AppModule {}
 
-//-------------------Stuff for i18n------------------------------------
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
-// The translate loader needs to know where to load i18n files
-// in Ionic's static asset pipeline.
+// The translate loader needs to know where to load i18n files in Ionic's static asset pipeline.
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
-
-//-------------------Stuff for settings---------------------------------
-import { Settings } from '../providers/settings';
-import { Storage, IonicStorageModule } from '@ionic/storage';
-
+// For default settings ; very first time app is opened
 export function provideSettings(storage: Storage) {
-  /**
-   * The Settings provider takes a set of default settings for your app.
-   *
-   * You can add new settings options at any time. Once the settings are saved,
-   * these values will not overwrite the saved values (this can be done manually if desired).
-   */
   return new Settings(storage, {
-    option1: true,
+    enableIntroPage: true,
   });
 }
