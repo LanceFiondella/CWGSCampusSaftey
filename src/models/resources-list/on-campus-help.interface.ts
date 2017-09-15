@@ -4,5 +4,5 @@ export interface OnCampusHelp{
   location: string;
   geolocation?: string;
   hours: string;
-  desc: string;
+  desc: string[];
 }

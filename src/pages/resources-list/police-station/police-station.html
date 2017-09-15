@@ -7,10 +7,16 @@
 <ion-content>
   <ion-card *ngFor='let policeStation of policeStationCollection'>
     <ion-card-header text-center style='font-size: 20px; color:primary' text-wrap>{{ policeStation.name }}</ion-card-header>
-    <ion-card-content text-center text-wrap>
-      <h2><b>Phone #:</b><br><a [href]="this.nativeDeviceFeatures.onOpenDialer(policeStation.phone)">{{ policeStation.phone }}</a></h2>
-      <h2><b>Address:</b><br><a [href]="this.nativeDeviceFeatures.onOpenMaps(policeStation.address)">{{ policeStation.address }}</a></h2>
-      <p><b>Description:</b><br>{{ policeStation.desc }}</p>
+    <ion-card-content  text-wrap>
+      <h2 text-center><b>Phone #:</b><br><a [href]="this.nativeDeviceFeatures.onOpenDialer(policeStation.phone)">{{ policeStation.phone }}</a></h2>
+      <h2 text-center><b>Address:</b><br><a [href]="this.nativeDeviceFeatures.onOpenMaps(policeStation.address)">{{ policeStation.address }}</a></h2>
+      <div>
+        <br>
+        <h2 text-center><b>Description:</b> </h2>
+        <ul *ngFor = "let sentence of policeStation.desc">
+          <li>{{ sentence }}</li>
+        </ul>
+      </div>
     </ion-card-content>
   </ion-card>
 </ion-content>

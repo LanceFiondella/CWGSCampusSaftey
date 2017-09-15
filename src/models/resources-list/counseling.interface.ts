@@ -3,5 +3,5 @@ export interface Counseling{
   phone: string;
   address: string;
   hours: string;
-  desc: string;
+  desc: string[];
 }

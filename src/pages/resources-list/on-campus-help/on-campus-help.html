@@ -7,14 +7,20 @@
 <ion-content>
   <ion-card *ngFor='let resource of onCampusHelpCollection'>
     <ion-card-header text-center style='font-size: 20px; color:primary' text-wrap>{{ resource.name }}</ion-card-header>
-    <ion-card-content text-center text-wrap>
-      <h2><b>Phone #:</b><br><a [href]="this.nativeDeviceFeatures.onOpenDialer(resource.phone)">{{ resource.phone }}</a></h2>
-      <h2><b>Location:</b><br>
+    <ion-card-content text-wrap>
+      <h2 text-center ><b>Phone #:</b><br><a [href]="this.nativeDeviceFeatures.onOpenDialer(resource.phone)">{{ resource.phone }}</a></h2>
+      <h2 text-center ><b>Location:</b><br>
         <a *ngIf='resource.geolocation' [href]="this.nativeDeviceFeatures.onOpenMaps(resource.geolocation)">{{ resource.location }}</a>
         <a *ngIf='!resource.geolocation' [href]="this.nativeDeviceFeatures.onOpenMaps(resource.location)">{{ resource.location }}</a>
       </h2>
-      <h2><b>Hours:</b><br>{{ resource.hours }}</h2>
-      <p><b>Description:</b><br>{{ resource.desc }}</p>
+      <h2 text-center ><b>Hours:</b><br>{{ resource.hours }}</h2>
+      <div>
+        <br>
+        <h2 text-center><b>Description:</b> </h2>
+        <ul *ngFor = "let sentence of resource.desc">
+          <li>{{ sentence }}</li>
+        </ul>
+      </div>
     </ion-card-content>
   </ion-card>
 </ion-content>

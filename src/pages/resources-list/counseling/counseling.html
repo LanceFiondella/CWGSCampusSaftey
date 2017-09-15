@@ -7,11 +7,17 @@
 <ion-content>
   <ion-card *ngFor='let counseling of counselingCollection'>
     <ion-card-header text-center style='font-size: 20px; color:primary' text-wrap>{{ counseling.name }}</ion-card-header>
-    <ion-card-content text-center text-wrap>
-      <h2><b>Phone #:</b><br><a [href]="this.nativeDeviceFeatures.onOpenDialer(counseling.phone)">{{ counseling.phone }}</a></h2>
-      <h2><b>Address:</b><br><a [href]="this.nativeDeviceFeatures.onOpenMaps(counseling.address)">{{ counseling.address }}</a></h2>
-      <h2><b>Hours:</b><br>{{ counseling.hours }}</h2>
-      <p><b>Description:</b><br>{{ counseling.desc }}</p>
+    <ion-card-content text-wrap>
+      <h2 text-center><b>Phone #:</b><br><a [href]="this.nativeDeviceFeatures.onOpenDialer(counseling.phone)">{{ counseling.phone }}</a></h2>
+      <h2 text-center><b>Address:</b><br><a [href]="this.nativeDeviceFeatures.onOpenMaps(counseling.address)">{{ counseling.address }}</a></h2>
+      <h2 text-center><b>Hours:</b><br>{{ counseling.hours }}</h2>
+      <div>
+          <br>
+          <h2 text-center><b>Description:</b> </h2>
+          <ul *ngFor = "let sentence of counseling.desc">
+            <li>{{ sentence }}</li>
+          </ul>
+        </div>
     </ion-card-content>
   </ion-card>
 </ion-content>

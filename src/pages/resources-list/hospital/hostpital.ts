@@ -7,7 +7,7 @@ import hospitals from './../../../models/resources-list/hospital-data'
 
 @Component({
   selector: 'page-hospital',
-  templateUrl: 'hospital.html'
+  templateUrl: 'hospital.html',
 })
 export class HospitalPage{
   hospitalCollection: Hospital[];
