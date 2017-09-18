@@ -43,6 +43,16 @@ export default [
     id: "9",
     question: "Where can I file a report?",
     answer: "answer here",
+  },
+  {
+    id: "10",
+    question: "Who can I talk to besides law enforcement?",
+    answer: "answer here"
+  },
+  {
+    id: "11",
+    question: "What is meant by victim confidentiality?",
+    answer: "answer here"
   }
   // {
   //   id: "",

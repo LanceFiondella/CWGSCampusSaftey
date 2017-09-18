@@ -6,7 +6,8 @@ export default [
     hours: "24/7",
     desc: [
       "This is the reccommnedned option because there are Sexual Assault Nurse Examiners.",
-      "Second closest hospital to Umass Dartmouth. 24/7 Emergency Room on-site."
+      "Second closest hospital to Umass Dartmouth.",
+      "24/7 Emergency Room on-site."
     ]
   },
   { 
@@ -16,7 +17,7 @@ export default [
     hours: "24/7",
     desc: [
       "Closet hospital to UMass Dartmouth.",
-      "Emergency Room on-site."
+      "24/7 Emergency Room on-site."
     ]
   },
 ];
