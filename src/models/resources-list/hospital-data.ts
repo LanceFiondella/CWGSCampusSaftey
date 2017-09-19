@@ -11,12 +11,12 @@ export default [
     ]
   },
   { 
-    name: "St. Lukes Hospital",
+    name: "St. Luke's Hospital",
     address: "101 Page St, New Bedford, MA 02740",
     phone: "(508) 997-1515",
     hours: "24/7",
     desc: [
-      "Closet hospital to UMass Dartmouth.",
+      "Closest hospital to UMass Dartmouth.",
       "24/7 Emergency Room on-site."
     ]
   },
