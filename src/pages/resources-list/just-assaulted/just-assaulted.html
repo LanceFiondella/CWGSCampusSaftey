@@ -1,0 +1,18 @@
+<ion-header no-shadow>
+  <ion-navbar>
+    <ion-title>Just Assaulted</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+    <ion-slides pager="true">
+        <ion-slide
+          *ngFor="let slide of slides">
+          <ion-card padding>
+            <ion-card-header text-center text-wrap style='font-size: 30px;'>{{ slide.title }}</ion-card-header>
+            <img *ngIf="slide.image" padding [src]="slide.image"/>
+            <p [innerHTML] = "slide.description"></p>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+</ion-content>

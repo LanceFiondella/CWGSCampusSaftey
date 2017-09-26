@@ -17,11 +17,11 @@ import { TutorialPage } from './../pages/tutorial/tutorial';
 import { TabsPage } from './../pages/tabs/tabs';
 import { HelpPage } from './../pages/help/help';
 import { ResourceList } from './../pages/resources-list/resource-list';
+import { JustAssaultedPage } from '../pages/resources-list/just-assaulted/just-assaulted';
 import { HospitalPage } from './../pages/resources-list/hospital/hostpital';
 import { PoliceStationPage } from './../pages/resources-list/police-station/police-station';
 import { OnCampusHelpPage } from './../pages/resources-list/on-campus-help/on-campus-help';
 import { CounselingPage } from './../pages/resources-list/counseling/counseling';
-import { ReportingPage } from './../pages/resources-list/reporting/reporting';
 import { QuestionAnswerList} from './../pages/question-answer-list/question-answer-list';
 import { QuestionDetailPage } from './../pages/question-answer-list/question-detail/question-detail';
 import { SearchPage } from './../pages/question-answer-list/search/search';
@@ -33,17 +33,18 @@ import { Questions } from './../providers/questions'
 import { Settings } from '../providers/settings';
 import { NativeDeviceFeatures } from './../providers/native-device-features';
 
+
 let pages = [
   MyApp,
   TutorialPage,
   TabsPage,
   HelpPage,
   ResourceList,
+  JustAssaultedPage,
   HospitalPage,
   PoliceStationPage,
   OnCampusHelpPage,
   CounselingPage,
-  ReportingPage,
   QuestionAnswerList,
   QuestionDetailPage,
   SearchPage,

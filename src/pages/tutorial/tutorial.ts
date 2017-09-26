@@ -8,13 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 //Services
 import { Settings } from '../../providers/settings';
-
-export interface Slide {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-}
+import { Slide } from '../../models/slide';
 
 @Component({
   selector: 'page-tutorial',
@@ -23,7 +17,7 @@ export interface Slide {
 export class TutorialPage {
   slides: Slide[];
   
-  constructor(public navCtrl: NavController, translate: TranslateService, public settings: Settings) {
+  constructor(private navCtrl: NavController, private translate: TranslateService, private settings: Settings) {
     //Change the "enable intro page" setting to false, so that this page is only the root this one time
     this.settings.load()
     .then( () => {

@@ -2,11 +2,11 @@ import { NavController } from 'ionic-angular';
 import { Component } from '@angular/core';
 
 import { SettingsPage } from './../settings/settings';
-import { PoliceStationPage } from './police-station/police-station';
+import { JustAssaultedPage } from './just-assaulted/just-assaulted';
 import { HospitalPage } from './hospital/hostpital';
-import { CounselingPage } from './counseling/counseling';
+import { PoliceStationPage } from './police-station/police-station';
 import { OnCampusHelpPage } from './on-campus-help/on-campus-help';
-import { ReportingPage } from './reporting/reporting';
+import { CounselingPage } from './counseling/counseling';
 
 
 @Component({
@@ -16,12 +16,12 @@ import { ReportingPage } from './reporting/reporting';
 
 export class ResourceList{
   settingsPage = SettingsPage;
+  justAssaultedPage = JustAssaultedPage;
   hospitalPage = HospitalPage;
   policeStationPage = PoliceStationPage;
   onCampusHelpPage = OnCampusHelpPage;
   counselingPage = CounselingPage;
-  reportingPage = ReportingPage;
-
+  
   constructor(private navCtrl:NavController){
   
   }
