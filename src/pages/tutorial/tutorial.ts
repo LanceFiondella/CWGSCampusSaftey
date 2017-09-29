@@ -5,7 +5,7 @@ import { NavController } from 'ionic-angular';
 //Pages
 import { TabsPage } from '../tabs/tabs';
 import { TranslateService } from '@ngx-translate/core';
-
+import { SchoolListPage } from '../choose-school/school-list/school-list';
 //Services
 import { Settings } from '../../providers/settings';
 import { Slide } from '../../models/slide';
@@ -65,9 +65,9 @@ export class TutorialPage {
 
   startApp() {
     this.navCtrl.setRoot(TabsPage, {}, {
-      animate: true,
-      direction: 'forward'
+      animate: false
     });
+    this.navCtrl.push(SchoolListPage);
   }
 
 }

@@ -13,7 +13,11 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 //Pages
 import { MyApp } from './app.component';
+import { PrivacyPolicyPage } from '../pages/legal/privacy-policy/privacy-policy';
+import { TermsOfServicePage } from '../pages/legal/terms-of-service/terms-of-service';
 import { TutorialPage } from './../pages/tutorial/tutorial';
+import { ChangeSchoolPage } from '../pages/choose-school/change-school';
+import { SchoolListPage } from '../pages/choose-school/school-list/school-list';
 import { TabsPage } from './../pages/tabs/tabs';
 import { HelpPage } from './../pages/help/help';
 import { ResourceList } from './../pages/resources-list/resource-list';
@@ -33,10 +37,13 @@ import { Questions } from './../providers/questions'
 import { Settings } from '../providers/settings';
 import { NativeDeviceFeatures } from './../providers/native-device-features';
 
-
 let pages = [
   MyApp,
+  PrivacyPolicyPage,
+  TermsOfServicePage,
   TutorialPage,
+  ChangeSchoolPage,
+  SchoolListPage,
   TabsPage,
   HelpPage,
   ResourceList,
@@ -98,5 +105,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 export function provideSettings(storage: Storage) {
   return new Settings(storage, {
     enableIntroPage: true,
+    school: {
+      name: "UMass: Dartmouth",
+      logo: "assets/img/umd_logo_square.png"
+    }
   });
 }

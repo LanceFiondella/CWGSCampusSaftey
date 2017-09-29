@@ -1,0 +1,33 @@
+page-change-school {
+  ion-content  {
+    #main {
+      margin-top: 20%;
+    }
+    img {
+      height: 30vh;
+      width: auto;
+      margin: auto;
+      display: block;
+    }
+    button{
+      font-size: 1.3em !important;
+      margin-top: 10% !important;
+      margin-left: 10% !important;
+      margin-right: 10% !important;
+      width: 80%;
+    }
+    #legal {
+      @media (max-width: 375px){
+        margin-top: 10%;
+      }
+      @media (min-width: 380px) {
+        margin-top: 10%;
+      }
+      margin-top: 25%;
+      text-align: center;
+      p {
+        font-size: 1.3em !important;
+      }
+    }
+  }
+}

@@ -9,12 +9,14 @@
 <ion-content>
 
   <form [formGroup]="form" *ngIf="settingsReady">
-    <ion-list *ngIf="page == 'main'">
+    <ion-list *ngIf="page == 'main'" padding>
       <ion-item>
         <ion-label>{{ 'SETTINGS_enableIntroPage' | translate }}</ion-label>
         <ion-toggle formControlName="enableIntroPage"></ion-toggle>
       </ion-item>
+      <button ion-item [navPush]='changeSchoolPage'>
+        Change your university 
+      </button>
     </ion-list>
   </form>
-
 </ion-content>
