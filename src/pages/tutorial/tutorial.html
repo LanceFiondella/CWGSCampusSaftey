@@ -11,6 +11,8 @@
           (click)="startApp()"> {{ 'TUTORIAL_CONTINUE_BUTTON' | translate }}
           <ion-icon name="arrow-forward"></ion-icon>
         </button>
+        <p>By using our app, you agree to our</p>
+        <p><a [navPush]="termsOfService">terms of service</a> & <a [navPush]="privacyPolicy">privacy policy</a></p>
       </div>
     </ion-slide>
   </ion-slides>

@@ -1,11 +1,12 @@
 //Angular / Ionic
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
 //Pages
 import { TabsPage } from '../tabs/tabs';
 import { TranslateService } from '@ngx-translate/core';
 import { SchoolListPage } from '../choose-school/school-list/school-list';
+import { TermsOfServicePage } from './../legal/terms-of-service/terms-of-service';
+import { PrivacyPolicyPage } from './../legal/privacy-policy/privacy-policy';
 //Services
 import { Settings } from '../../providers/settings';
 import { Slide } from '../../models/slide';
@@ -16,6 +17,8 @@ import { Slide } from '../../models/slide';
 })
 export class TutorialPage {
   slides: Slide[];
+  privacyPolicy = PrivacyPolicyPage;
+  termsOfService = TermsOfServicePage;
   
   constructor(private navCtrl: NavController, private translate: TranslateService, private settings: Settings) {
     //Change the "enable intro page" setting to false, so that this page is only the root this one time
