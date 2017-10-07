@@ -1,7 +1,6 @@
 //Angular / Ionic
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
 //Pages
 import { TabsPage } from '../tabs/tabs';
 import { TranslateService } from '@ngx-translate/core';
