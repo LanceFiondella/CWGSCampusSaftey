@@ -3,5 +3,5 @@ export interface Hospital {
   address: string;
   phone: string;
   hours: string;
-  desc: string[];
+  desc?: string[];
 }

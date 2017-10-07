@@ -1,21 +1,6 @@
 {
-  "WELCOME_TITLE": "Welcome",
-  "BACK_BUTTON_TEXT" : "Back",
-
-  "TAB1_TITLE": "HELP",
-  "TAB2_TITLE": "Resources",
-  "TAB3_TITLE": "Q & A",
-
-  "TUTORIAL_SKIP_BUTTON" : "Skip",
-  "TUTORIAL_CONTINUE_BUTTON" : "Continue",
-  "TUTORIAL_SLIDE1_TITLE": "University of Massachusetts: Dartmouth CWGS Campus Saftey",
-  "TUTORIAL_SLIDE1_DESCRIPTION": "Our goal is to help <b>end campus sexual assault,</b> by educating students. Unfortunately, sexual assault does still occur, <b>This app provides resources & information to direct victims to the right place.</b",
-  "TUTORIAL_SLIDE2_TITLE": "We take sexual assault seriously.",
-  "TUTORIAL_SLIDE2_DESCRIPTION": "We want to help keep you out of harm's way. Having this app in your arsenal lets you eradicate the fears of going out & enjoying our fine campus.",
-  "TUTORIAL_SLIDE3_TITLE": "Educational Resources",
-  "TUTORIAL_SLIDE3_DESCRIPTION": "We have provided answers to common questions regarding sexual assault to educate yourself. <b>We want to assure any victims that help of all kinds is nearby, and direct you to those resources.</b> Too often a victim feels trapped & alone, we are here to help, even if it feels minor.",
-  "TUTORIAL_SLIDE4_TITLE": "Are you ready?",
-  "TUTORIAL_SLIDE4_DESCRIPTION": "We want to make our campus a <b>comfortable, safe, and fun</b> place to be. Knowing that you're safe keeps your mind at peace.",
+  "TUTORIAL_SLIDE2_TITLE": "Tap continue to start.",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "By clicking continue, you agree to the <a [href]='this.poop()'>terms of service</a> & <a href='#'>privacy policy</a>",
 
   "SETTINGS_TITLE": "Settings",
   "SETTINGS_enableIntroPage": "Enable intro page",

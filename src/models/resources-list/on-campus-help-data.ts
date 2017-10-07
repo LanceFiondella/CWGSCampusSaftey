@@ -6,10 +6,9 @@ export default [
     geolocation: "41.628822, -71.004487",
     hours: "Mon-Fri 9am-5pm",
     desc: [
-    "The best option if you're a victim of sexual assault.",
+    "Offers resources and support for students, including women’s and LGBT issues.",
     "Your case is kept fully confidential.",
     "Coordinates campus initiatives to prevent sexual assault and intimate partner violence.",
-    "Offers resources and support on women’s and LGBT issues",
     "Aims at eliminating barriers, diminishing prejudices, and creating a supportive climate and space for all."
     ]
   },
@@ -17,11 +16,10 @@ export default [
     name: "Counseling Center",
     phone: "(508) 999-8648",
     location: "Auditorium Annex between the main auditorium and the Liberal Arts building",
-    geolocation: "",
+    geolocation: "41.628445, -71.004563",
     hours: "Mon-Fri 8am-5pm",
     desc: [
-      "Help students cope with emotional, interpersonal and academic concerns.",
-      "Provides individual, couples and group counseling, and psychiatric services."
+      "Provides individual, couples and group counseling, and psychiatric services to help students cope with emotional, interpersonal, and academic concerns.",
     ]
   },
   {
@@ -31,8 +29,7 @@ export default [
    geolocation: "",
    hours: "Mon-Fri 8am-5pm, except during breaks which is Mon-Fri 8am-4pm",
    desc: [
-      "Staff of nurse practitioners, nurses, and a consulting physician can handle your health care needs.",
-      "Can also make referrals when necessary."  
+      "Staff of nurse practitioners, nurses, and a consulting physician to handle your health care needs and make referrals when necessary.",
    ]
   },
   {
@@ -41,8 +38,7 @@ export default [
    location: "Public Safety / Steam Plant, Old Westport Road, Dartmouth, MA" ,
    hours: "24/7",
    desc: [
-      "Full service, ‌MPAC Accredited Law Enforcement Agency",
-      "Provides a wide array of Police and Public Safety services to the University community."
+      "Full service, ‌MPAC (Massachusetts Police Accredidation Commisssion) Accredited Law Enforcement Agency to provide a wide array of Police and Public Safety services to the University community."
    ]
   },
 ]

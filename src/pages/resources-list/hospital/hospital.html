@@ -13,7 +13,7 @@
       <h2 text-center><b>Hours:</b><br>{{ hospital.hours }}</h2>
       <div>
         <br>
-        <h2 text-center><b>Description:</b> </h2>
+        <h2 *ngIf= "hospital.desc" text-center><b>Description:</b> </h2>
         <ul *ngFor = "let sentence of hospital.desc">
           <li>{{ sentence }}</li>
         </ul>

@@ -1,17 +1,29 @@
 <ion-content no-bounce>
   <ion-slides pager="true">
-    <ion-slide
-      *ngFor="let slide of slides">
-      <img [src]="slide.image" class="slide-image"/>
-      <h2 class="slide-title">{{ slide.title }}</h2>
-      <p [innerHTML] = "slide.description"></p>
-      <div 
-        *ngIf="slide.id === 4">
-        <button ion-button icon-right large clear
-          (click)="startApp()"> {{ 'TUTORIAL_CONTINUE_BUTTON' | translate }}
-          <ion-icon name="arrow-forward"></ion-icon>
-        </button>
+    <ion-slide>
+      <img src="assets/img/umd_logo.png" alt="UMass Dartmouth Logo" class="slide-img">
+      <h2 padding class='title'>University of Massachusetts Dartmouth: sexual assault education & resources for victims</h2>
+      <div class="slide-one">
+        <h5>This app provides sexual assault education and the following information to direct sexual assault victims to the right place.</h5>
+        <ul>
+          <li>Names, Phone Numbers & addresses of</li>
+          <ul>
+            <li>local hospitals</li>
+            <li>police stations</li>
+            <li>on campus help</li>
+            <li>reporting options</li>
+            <li>counseling centers</li>
+          </ul>
+          <li>All you have to do is tap a phone number to call, or an adress to get directions.</li>
+        </ul>
       </div>
     </ion-slide>
-  </ion-slides>
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-2.png" alt="Tap the button to continue" class="slide-img">
+      <p>Tap the button below to start!</p>
+      <button ion-button (click)="startApp()">I agree</button>
+      <p>By tapping "I agree" you agree to our </p>
+      <p><a [navPush]="termsOfServicePage">terms of service</a> and <a href="privacyPolicyPage">privacy policy</a></p>
+    </ion-slide>
+  </ion-slides> 
 </ion-content>
