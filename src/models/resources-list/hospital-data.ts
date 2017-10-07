@@ -5,8 +5,7 @@ export default [
     phone: "(508) 679-3131",
     hours: "24 Hours a day, 7 Days a week",
     desc: [
-      "Recommended because there are Sexual Assault Nurse Examiners who are trained to perform pregnancy & sexually transmitted disease testing, and collect forensic evidence as well as ensure victim saftey and comfort.",
-      "Second closest hospital to UMass Dartmouth.",
+      "Recommended because there are Sexual Assault Nurse Examiners.",
     ]
   },
   { 

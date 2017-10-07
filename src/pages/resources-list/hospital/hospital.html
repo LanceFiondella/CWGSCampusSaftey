@@ -5,8 +5,20 @@
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-header class="steve" text-center text-wrap>Important Information:</ion-card-header>
+    <ion-card-content>
+      <div class="important-info">
+        <h2 text-center><b>Hospital services may include the following:</b></h2>
+        <ul>
+          <li>Medical care, pregnancy testing, STD testing to ensure victim saftey and comfort</li>
+          <li>Sexually Assault Nurse Examiner (SANE) are trained to collect forensic evidence, including clothing worn at the time of the assault. Showering or bathing may damage evidence and taking a change of clothing is recommend.</li>
+        </ul>
+      </div>
+    </ion-card-content>
+  </ion-card>
   <ion-card *ngFor='let hospital of hospitalCollection'>
-    <ion-card-header text-center text-wrap style='font-size: 20px;'>{{ hospital.name }}</ion-card-header>
+    <ion-card-header text-center text-wrap>{{ hospital.name }}</ion-card-header>
     <ion-card-content text-wrap>
       <h2 text-center><b>Phone #:</b><br><a [href]="this.nativeDeviceFeatures.onOpenDialer(hospital.phone)">{{ hospital.phone }}</a></h2>
       <h2 text-center><b>Address:</b><br><a [href]="this.nativeDeviceFeatures.onOpenMaps(hospital.address)">{{ hospital.address }}</a></h2>

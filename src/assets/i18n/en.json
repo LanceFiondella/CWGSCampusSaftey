@@ -1,7 +1,4 @@
 {
-  "TUTORIAL_SLIDE2_TITLE": "Tap continue to start.",
-  "TUTORIAL_SLIDE2_DESCRIPTION": "By clicking continue, you agree to the <a [href]='this.poop()'>terms of service</a> & <a href='#'>privacy policy</a>",
-
   "SETTINGS_TITLE": "Settings",
   "SETTINGS_enableIntroPage": "Enable intro page",
 
