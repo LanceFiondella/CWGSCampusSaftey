@@ -1,6 +1,6 @@
 page-resource-list{
 
-  //iPhone 6 Plus, 7 Plus, 8 Plus
+  //iPhone 6 Plus, 7 Plus, 8 Plus (large screens)
   @media (min-width: 414px) {
     ion-card h1{
       font-weight: bolder !important;
@@ -19,7 +19,7 @@ page-resource-list{
     }
   }
   
-  //iPhone 6, 7, 8
+  //iPhone 6, 7, 8 (medium screens)
   @media (min-width: 375px) and (max-width: 413px) {
     ion-card h1{
       font-weight: bolder !important;
@@ -38,7 +38,7 @@ page-resource-list{
     }
   }
 
-  //iPhone 5, 5s, SE
+  //iPhone 5, 5s, SE (small screens)
   @media (min-width: 320px) and (max-width: 374px) {
     ion-card h1{
       font-weight: bolder !important;
