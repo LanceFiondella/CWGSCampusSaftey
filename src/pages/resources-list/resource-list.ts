@@ -1,4 +1,4 @@
-import { NavController } from 'ionic-angular';
+import { NavController, AlertController } from 'ionic-angular';
 import { Component } from '@angular/core';
 
 import { SettingsPage } from './../settings/settings';
@@ -22,8 +22,40 @@ export class ResourceList{
   onCampusHelpPage = OnCampusHelpPage;
   counselingPage = CounselingPage;
   
-  constructor(private navCtrl:NavController){
+  constructor(private navCtrl:NavController, private alertCtrl: AlertController){
   
   }
-  
+
+  viewAmnestyPolicy() {
+    const alert =  this.alertCtrl.create({
+      title: "Amnesty Policy",
+      message: "If the person who has been victimized and who is or was under the influence of alcohol or drugs or in violation of any other Code of Conduct violation at either the time of the incident or at the time s/he makes the report, s/he will not be charged with an alcohol or drug violation (unless involving distribution) either through the criminal or University Student Conduct Process.",
+      buttons: [
+        {
+          text: 'Ok',
+          handler: () => {
+            console.log("leaving");
+          }
+        },
+      ]
+    })
+    alert.present();
+  }
+
+  viewTitleIX() {
+    const alert = this.alertCtrl.create({
+      title: 'Title IX',
+      subTitle: 'What is it?',
+      message: 'No person in the United States shall, on the basis of sex, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any education program or activity receiving Federal financial assistance.',
+      buttons: [
+        {
+          text: 'Ok',
+          handler: () => {
+            console.log("leaving");
+          }
+        },
+      ]
+    });
+    alert.present(); 
+  }
 }

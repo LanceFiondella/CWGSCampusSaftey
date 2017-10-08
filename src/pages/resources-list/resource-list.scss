@@ -1,5 +1,7 @@
 page-resource-list{
-
+  .underline {
+    text-decoration: underline;
+  }
   //iPhone 6 Plus, 7 Plus, 8 Plus (large screens)
   @media (min-width: 414px) {
     ion-card h1{
