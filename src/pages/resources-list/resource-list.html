@@ -17,36 +17,52 @@
         <li>It is not your fault, even if you were voluntarily using drugs or alcohol. <br>
         (View the <a (click)="viewAmnestyPolicy()" class="underline">UmassD amnesty policy)</a></li>
         <li>Your feelings are valid & important and it is your right to decide what to do.</li>
-        <li>You may seek medical care without reporting the crime to the police.</li>
-        <li>You have a right to confidentiality through our school's <a (click)="viewTitleIX()" class="underline">title IX.</a><br>
-        </li>
-        <li>You are entitled to emotional support.</li> 
       </ul>
   </ion-card>
-  <ion-list>
-    <button ion-item [navPush]='justAssaultedPage'>
-        <ion-icon name='alert' item-left></ion-icon>
-        If you were just assaulted
-    </button>
-    <button ion-item [navPush]='hospitalPage'>
-      <ion-icon name='pulse' item-left></ion-icon>
-      Local Hospitals
-    </button>
-    <button ion-item [navPush]='policeStationPage'>
-      <ion-icon name='ios-radio-outline' item-left></ion-icon>
-      Local Police Stations
-    </button>
-    <button ion-item [navPush]='onCampusHelpPage'>
-        <ion-icon name='ios-medkit-outline' item-left></ion-icon>
-        On Campus Help
-      </button>
-    <button ion-item [navPush]='counselingPage'>
-      <ion-icon name='people' item-left></ion-icon>
-      Local Counseling
-    </button>
-    <!-- <button ion-item [navPush]='reportingPage'>
-      <ion-icon name='ios-paper-outline' item-left></ion-icon>
-      Reporting
-    </button> -->
-  </ion-list>
-</ion-content>
+
+  <ion-card>
+    <h1 padding-top text-center>Local Hospitals</h1>
+    <ul>
+      <li>You may seek medical care without reporting the crime to the police.</li>
+      <li>Hospital services may include the following:</li>
+      <ul>
+        <li>Medical care, pregnancy testing, and  drugs to prevent contracting a sexually transmitted disease to ensure victim saftey and comfort.</li>
+        <li>A Sexually Assault Nurse Examiner (SANE) is trained to collect forensic evidence, including clothing worn at the time of the assault. Showering or bathing may damage evidence and taking a change of clothing is recommend.</li>    
+      </ul>
+    </ul>
+    <div text-center padding-bottom>
+      <button ion-button [navPush]="hospitalPage">Find nearest hospitals</button>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <h1 padding-top text-center>Local Police Stations</h1>
+    <ul>
+      <li>Can coordinate victim transportation, ensure victim safety, and take criminal reports.</li>
+    </ul>
+    <div text-center padding-bottom>
+        <button ion-button [navPush]="policeStationPage">Find nearest police stations</button>
+    </div>
+  </ion-card>
+
+  <ion-card>
+      <h1 padding-top text-center>On Campus Help</h1>
+      <ul>
+        <li>You have a right to confidentiality through our school's <a (click)="viewTitleIX()" class="underline">Title IX.</a><br></li>
+        <li>Legal advocacy services support survivors  of sexual assault and domestic violence.</li>
+      </ul>
+      <div text-center padding-bottom>
+          <button ion-button [navPush]="onCampusHelpPage">Find on campus help</button>
+      </div>
+    </ion-card>
+
+    <ion-card>
+        <h1 padding-top text-center>Local Counseling</h1>
+        <ul>
+          <li>You are entitled to emotional support.</li>
+          <li>Legal advocacy services support survivors  of sexual assault and domestic violence.</li>
+        </ul>
+        <div text-center padding-bottom>
+            <button ion-button [navPush]="counselingPage">Find local counseling</button>
+        </div>
+      </ion-card>
