@@ -17,17 +17,18 @@ export class NativeDeviceFeatures {
   onOpenMaps(location: string, locationName?:string) {
     let temp = "";
     let ifLocationName = "";
-    //if a location name is provided, add it to the google maps intent URI
-    if(locationName){
-      ifLocationName = "(" + locationName + ")"
-    }
    //if on ios
     if(this.platform.is("ios")) {
+      //?ll=location
       temp = "maps:?q=" + location;
       return this.sanitizer.bypassSecurityTrustUrl(temp);
     }
     //else must be android
     else {
+      //if a location name is provided, add it to the google maps intent URI
+      if(locationName){
+        ifLocationName = "(" + locationName + ")"
+      }
       temp = "geo:?q=" + location + ifLocationName;
       return this.sanitizer.bypassSecurityTrustUrl(temp);
     }
