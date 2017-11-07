@@ -1,6 +1,6 @@
 export default [
   {
-    name: "Center for Women, Gender & Sexuality",
+    name: "Center for Women, Gender and Sexuality",
     phone: "(508) 910-6567",
     location: "Campus Center, Suite 207 (Top Floor)",
     geolocation: "41.628822, -71.004487",

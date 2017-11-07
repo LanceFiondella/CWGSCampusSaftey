@@ -10,7 +10,7 @@
     <ion-card-content text-wrap>
       <h2 text-center ><b>Phone #:</b><br><a [href]="this.nativeDeviceFeatures.onOpenDialer(resource.phone)">{{ resource.phone }}</a></h2>
       <h2 text-center ><b>Location:</b><br>
-        <a *ngIf='resource.geolocation' [href]="this.nativeDeviceFeatures.onOpenMaps(resource.geolocation)">{{ resource.location }}</a>
+        <a *ngIf='resource.geolocation' [href]="this.nativeDeviceFeatures.onOpenMaps(resource.geolocation, resource.name)">{{ resource.location }}</a>
         <a *ngIf='!resource.geolocation' [href]="this.nativeDeviceFeatures.onOpenMaps(resource.location)">{{ resource.location }}</a>
       </h2>
       <h2 text-center ><b>Hours:</b><br>{{ resource.hours }}</h2>
