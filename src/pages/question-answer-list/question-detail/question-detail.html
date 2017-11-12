@@ -1,15 +1,13 @@
 <ion-header>
-
   <ion-navbar>
     <ion-title>{{ question.question }}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content>
-  <div class="question-detail" padding>
-    <h2>{{question.question}}</h2>
-    <p>{{question.answer}}</p>
-  </div>
+  <ion-card>
+    <ion-card-header text-wrap><h3>{{question.question}}</h3></ion-card-header>
+    <ion-card-content>{{question.answer}}</ion-card-content>
+  </ion-card>
 </ion-content>

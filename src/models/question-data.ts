@@ -1,58 +1,35 @@
 export default [
   {
-    id: "1",
     question: "What is sexual assault?",
-    answer: "answer here",
+    answer: "Sexual assault is any type of sexual contact or behavior that occurs without the explicit consent of the recipient. Falling under the definition of sexual assault are sexual activities as forced sexual intercourse, forcible sodomy, child molestation, incest, fondling, and attempted rape.",
   },
   {
-    id: "2",
     question: "What is consent?",
-    answer: "answer here",
+    answer: "Consent is when someone agrees (says “yes”) to sexual activity with another person. A person in a sexual situation must feel that they are able to say “no” or withdraw consent at any point. Consent may not be valid if a person is being subjected to actions or behaviors that elicit emotional, psychological, physical, reputational, financial pressure, threat, intimidation, or fear (coercion or force). Previous consent or past agreements to engage in sexual activity, does not presume consent in future sexual activities. Consent cannot be validly given by a person who is incapacitated or a legal minor. It is important to understand that the absence of the word “no”, does not constitute consent.",
   },
   {
-    id: "3",
     question: "What is domestic violence?",
-    answer: "answer here",
+    answer: "A pattern of abusive behavior in any relationship that is used by one partner to gain or maintain control over another intimate partner, including physical abuse, sexual abuse, emotional abuse, economic abuse, psychological abuse, threats, stalking, and cyberstalking.",
   },
   {
-    id: "4",
     question: "What is dating violence?",
-    answer: "answer here",
+    answer: "A form of domestic violence, in which there is a social, intimate, or romantic relationship between the victim and the abuser.",
   },
   {
-    id: "5",
     question: "What is sexual coercion?",
-    answer: "answer here",
+    answer: "When an attacker uses pressure, manipulation, emotional force, or trickery to get a victim to agree to sexual activity. It can be as simple as encouraging someone to have an alcoholic beverage, or saying or imply “I’ll leave you if you don’t have sex with me”. If you have been coerced to say “yes”, when you were thinking “no”, you may have been sexually coerced. It is not your fault.",
   },
   {
-    id: "6",
-    question: "Is it safe to inform law enforcement?",
-    answer: "answer here",
-  },
-  {
-    id: "7",
-    question: "I have been assaulted, what do I do next?",
-    answer: "answer here",
-  },
-  {
-    id: "8",
     question: "Is it assault if it was my partner?",
-    answer: "answer here",
+    answer: "Regardless of it was your partner or not, if you feel like you did not give consent, or felt as if you have been coerced, then it was assault.",
   },
   {
-    id: "9",
-    question: "Where can I file a report?",
-    answer: "answer here",
-  },
-  {
-    id: "10",
     question: "Who can I talk to besides law enforcement?",
-    answer: "answer here"
+    answer: "You can speak with Title IX coordinator on campus because they are required to preserve confidentially. If your campus does not have a Title IX coordinator, campus counselling is another option."
   },
   {
-    id: "11",
     question: "What is meant by victim confidentiality?",
-    answer: "answer here"
+    answer: "No one else besides a Title IX coordinator will be made aware of the situation. Law enforcement will not be told unless you are a danger to yourself or others."
   }
   // {
   //   id: "",
