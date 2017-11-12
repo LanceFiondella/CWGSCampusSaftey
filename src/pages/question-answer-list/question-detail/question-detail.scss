@@ -1,4 +1,4 @@
-page-item-detail {
+page-question-detail {
   .item-profile {
     width: 100%;
     background-position: center center;
@@ -6,9 +6,16 @@ page-item-detail {
     height: 250px;
   }
 
-  .question-detail {
+  ion-card {
     width: 100%;
     background: white;
     position: absolute;
+    ion-card-header h3 {
+      font-size: 30px !important;
+    }
+    ion-card-content{
+      line-height: 1.3 !important;
+      font-size: 17px !important;
+    }
   }
 }
