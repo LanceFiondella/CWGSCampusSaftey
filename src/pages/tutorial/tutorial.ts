@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 //Pages
 import { TabsPage } from '../tabs/tabs';
-import { TranslateService } from '@ngx-translate/core';
 import { SchoolListPage } from '../choose-school/school-list/school-list';
 import { TermsOfServicePage } from '../legal/terms-of-service/terms-of-service';
 import { PrivacyPolicyPage } from '../legal/privacy-policy/privacy-policy';
