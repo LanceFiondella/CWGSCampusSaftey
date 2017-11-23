@@ -12,4 +12,4 @@
   5. Run ionic serve to run the app in a development server 
     
 ## Future Expansion
-  Our goal is to create a general template to enable other schools to take our template and add in their own local resources & information. If you would be interested in integrating our app with your school, please contact us.
+  Our goal is to create a general template to enable other schools to take our template and add in their own local resources & information. If you would be interested in integrating our app with your university, please contact us.

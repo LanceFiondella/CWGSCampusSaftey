@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 //Pages
 import { TabsPage } from '../tabs/tabs';
-import { SchoolListPage } from '../choose-school/school-list/school-list';
+import { UniversityListPage } from '../choose-university/university-list/university-list';
 import { TermsOfServicePage } from '../legal/terms-of-service/terms-of-service';
 import { PrivacyPolicyPage } from '../legal/privacy-policy/privacy-policy';
 
@@ -31,6 +31,6 @@ export class TutorialPage {
     this.navCtrl.setRoot(TabsPage, {}, {
       animate: false
     });
-    this.navCtrl.push(SchoolListPage);
+    this.navCtrl.push(UniversityListPage);
   }
 }
