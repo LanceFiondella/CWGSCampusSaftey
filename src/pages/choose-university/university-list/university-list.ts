@@ -19,7 +19,7 @@ export class UniversityListPage {
 
   constructor(private navCtrl: NavController,private settings:Settings) {
   }
-  
+
   onChosenUniversity(university:University) {
     //set new university
     this.settings.setValue("university",university);

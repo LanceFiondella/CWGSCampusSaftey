@@ -16,25 +16,29 @@ import schoolInfo from './../../models/university-info';
   templateUrl: "change-university.html"
 })
 
-export class ChangeUniversityPage {
+export class ChangeUniversityPage{
   privacyPolicy = PrivacyPolicyPage;
   termsOfServicePage = TermsOfServicePage;
   schoolList = UniversityListPage;
   currentUniversity: University = {
     name: "",
+    address: "",
+    phone: "",
     logo: ""
-  };
+  }; //instantiate empty object (since you cant instantiate an interface)
 
-  constructor(private navCtrl:NavController, private settings: Settings) {
+  constructor(private settings: Settings) {
   }
 
-  ionViewWillEnter(){
+  //use this lifecycle so that the values are reloaded every time(incase the school is changed)
+  ionViewWillEnter() {
     //get the current university value and show it
     this.settings.getValue("university")
     .then( (university) => {
       this.setValues(university);
     })
   }
+
   getImage() {
     return this.currentUniversity.logo
   }

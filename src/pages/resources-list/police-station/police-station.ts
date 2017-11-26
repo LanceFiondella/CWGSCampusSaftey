@@ -4,6 +4,7 @@ import { NativeDeviceFeatures } from './../../../providers/native-device-feature
 
 import { PoliceStation } from './../../../models/resources-list/police-station.interface';
 import policeStations from './../../../models/resources-list/police-station-data';
+
 @Component({
   selector: 'page-police-station',
   templateUrl: 'police-station.html'

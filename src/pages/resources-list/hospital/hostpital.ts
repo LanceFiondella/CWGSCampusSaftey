@@ -11,7 +11,7 @@ import hospitals from './../../../models/resources-list/hospital-data'
 })
 export class HospitalPage{
   hospitalCollection: Hospital[];
-  
+
   constructor(private nativeDeviceFeatures:NativeDeviceFeatures) {
     this.hospitalCollection = hospitals;
   }
