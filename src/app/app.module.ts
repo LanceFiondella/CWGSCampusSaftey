@@ -13,7 +13,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 //Pages
 import { MyApp } from './app.component';
-import { PrivacyPolicyPage } from '../pages/legal/privacy-policy/privacy-policy';
+//import { PrivacyPolicyPage } from '../pages/legal/privacy-policy/privacy-policy';
 import { TermsOfServicePage } from '../pages/legal/terms-of-service/terms-of-service';
 import { TutorialPage } from './../pages/tutorial/tutorial';
 import { ChangeUniversityPage } from '../pages/choose-university/change-university';
@@ -39,7 +39,7 @@ import { NativeDeviceFeatures } from './../providers/native-device-features';
 
 let pages = [
   MyApp,
-  PrivacyPolicyPage,
+  //PrivacyPolicyPage,
   TermsOfServicePage,
   TutorialPage,
   ChangeUniversityPage,

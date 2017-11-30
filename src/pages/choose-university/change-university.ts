@@ -2,7 +2,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 //Pages
-import { PrivacyPolicyPage } from '../legal/privacy-policy/privacy-policy';
+//import { PrivacyPolicyPage } from '../legal/privacy-policy/privacy-policy';
 import { TermsOfServicePage } from '../legal/terms-of-service/terms-of-service';
 import { UniversityListPage } from './university-list/university-list';
 //Services
@@ -17,7 +17,7 @@ import schoolInfo from './../../models/university-info';
 })
 
 export class ChangeUniversityPage{
-  privacyPolicy = PrivacyPolicyPage;
+  //privacyPolicy = PrivacyPolicyPage;
   termsOfServicePage = TermsOfServicePage;
   schoolList = UniversityListPage;
   currentUniversity: University = {
