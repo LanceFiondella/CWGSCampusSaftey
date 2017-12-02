@@ -1,4 +1,4 @@
-# CWGS Campus Saftey
+# Sexual Violence Prevention and Support
   The University of Massachusetts Dartmouth: Electrical and Computer Engineering Department has paired with the University of Massachusetts Dartmouth: Center for Women and Gender studies to create a mobile application to stop sexual violence, and provide educational resources to victims.
   
 ## Architecture
