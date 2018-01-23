@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HTTP } from '@ionic-native/http';
+
 
 @Component({
   selector: 'page-feedback-form',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class FeedbackFormPage {
-
+Htt
 }
