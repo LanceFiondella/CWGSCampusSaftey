@@ -30,6 +30,7 @@ import { QuestionAnswerList} from './../pages/question-answer-list/question-answ
 import { QuestionDetailPage } from './../pages/question-answer-list/question-detail/question-detail';
 import { SearchPage } from './../pages/question-answer-list/search/search';
 import { SettingsPage } from './../pages/settings/settings';
+import { FeedbackFormPage } from '../pages/feedback-form/feedback-form';
 
 //Services
 import { Api } from '../providers/api';
@@ -55,7 +56,8 @@ let pages = [
   QuestionAnswerList,
   QuestionDetailPage,
   SearchPage,
-  SettingsPage
+  SettingsPage,
+  FeedbackFormPage
 ]
 
 export function declarations() {
