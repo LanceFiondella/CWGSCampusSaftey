@@ -9,10 +9,19 @@
     <h1 padding text-center>Have feedback?</h1>
     <h3 padding-bottom text-center>Found a bug? Have a feature request? Have reccomendations? Please share with us! Write your comments in the text box below.</h3>
     <ion-item>
-      <ion-textarea id="feedbackFormTextArea" rows="5" maxLength="1500" placeholder="Please offer your comments here."></ion-textarea>
+      <ion-textarea
+        id="feedbackFormTextArea"
+        rows="5"
+        maxLength="1500"
+        [(ngModel)]="userInput"
+        placeholder="Please offer your comments here."></ion-textarea>
     </ion-item>
     <div text-center padding>
-      <button ion-button text-center>Submit Feedback</button>
+      <button
+      ion-button
+      text-center
+      [disabled] = 'disabled'
+      (click)='sendData()'>Submit Feedback</button>
     </div>
   </ion-card>
 </ion-content>
