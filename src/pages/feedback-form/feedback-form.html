@@ -6,15 +6,40 @@
 
 <ion-content>
   <ion-card>
-    <h1 padding text-center>Have feedback?</h1>
+    <h1 padding text-center><b>Have feedback?</b></h1>
     <h3 padding-bottom text-center>Found a bug? Have a feature request? Have reccomendations? Please share with us! Write your comments in the text box below.</h3>
+    <h3 padding-bottom text-center class="underline"> Your message is anonymous!</h3>
     <ion-item>
       <ion-textarea
-        id="feedbackFormTextArea"
+        class="textarea-lg"
         rows="5"
         maxLength="1500"
-        [(ngModel)]="userInput"
+        [(ngModel)]="messageInput"
         placeholder="Please write your comments here."></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked><b>Name</b> <span class="underline">(Optional)</span></ion-label>
+      <ion-input
+        class="ioninput-sm"
+        maxLength="75"
+        [(ngModel)]="nameInput"
+        placeholder="Enter name here."></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked><b>Email</b> <span class="underline">(Optional</span> - if you want us to reach you)</ion-label>
+      <ion-input
+        class="ioninput-sm"
+        maxLength="75"
+        [(ngModel)]="emailInput"
+        placeholder="Enter email here."></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked><b>Phone</b> <span class="underline">(Optional</span> - if you want us to reach you)</ion-label>
+      <ion-input
+        class="ioninput-sm"
+        maxLength="75"
+        [(ngModel)]="phoneInput"
+        placeholder="Enter phone number here."></ion-input>
     </ion-item>
     <div text-center padding>
       <button
