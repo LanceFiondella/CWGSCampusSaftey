@@ -48,7 +48,7 @@ export class FeedbackFormPage {
         sentFrom: "Sent from " + this.nativeDeviceFeatures.getPlatform() + " Ionic App"
     };
     //setup the observable to be returned by the sever
-    this.postRequestObservable = this.http.post('http://localhost:5400/api/feedbackform', body)
+    this.postRequestObservable = this.http.post('http://campussaftey.us-east-1.elasticbeanstalk.com/api/feedbackform/', body)
     .catch((err) => {
       Observable.throw(new Error('Unable To Send Message'));
       return Observable.of(err);
