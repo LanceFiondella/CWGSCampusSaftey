@@ -17,23 +17,33 @@ export default [
   },
   {
     question: "What is sexual coercion?",
-    answer: "When an attacker uses pressure, manipulation, emotional force, or trickery to get a victim to agree to sexual activity. It can be as simple as encouraging someone to have an alcoholic beverage, or saying or imply “I’ll leave you if you don’t have sex with me”. If you have been coerced to say “yes”, when you were thinking “no”, you may have been sexually coerced. It is not your fault.",
+    answer: "When an attacker uses pressure, manipulation, emotional force, or trickery to get a victim to agree to sexual activity. It can be as simple as encouraging someone to have an alcoholic beverage, or saying or imply “I’ll leave you if you don’t have sex with me”.",
   },
   {
     question: "Is it assault if it was my partner?",
-    answer: "Regardless of it was your partner or not, if you feel like you did not give consent, or felt as if you have been coerced, then it was assault.",
+   // answer: "Regardless of it was your partner or not, if you feel like you did not give consent, or felt as if you have been coerced, then it was assault.",
+   answer: "Sexual assault can happen even if the parties are in a relationship. Consent is always required.",
   },
   {
     question: "Who can I talk to besides law enforcement?",
-    answer: "You can speak with Title IX coordinator on campus because they are required to preserve confidentially. If your campus does not have a Title IX coordinator, campus counselling is another option."
+    answer: "You can speak to the confidential victim advocate for more information about your options and resources, or you can speak with the Title IX office if you would like to report a case to the University."
   },
   {
     question: "What is meant by victim confidentiality?",
-    answer: "No one else besides a Title IX coordinator will be made aware of the situation. Law enforcement will not be told unless you are a danger to yourself or others."
+    answer: "The confidential victim advocate offers support and guidance for survivors and victims of sexual violence. Survivors will be made aware of resources and reporting options so they can make the best steps for themselves moving forward. Most staff members at the counseling center, health services, and the center for religious and spiritual life are not mandated to report cases of sexual violence to the Title IX office. All other faculty and staff must report any case of sexual violence to the Title IX office to be investigated."
   },
   {
+    question: "What happens if I talk to a faculty or staff member about the sexual violence I experienced?",
+    answer: "If a faculty or staff member is made aware of a case of sexual violence, they are mandated to report such a case to the Title IX office to investigate. Most staff members at the counseling center, health services, and the center for religious and spiritual life are not mandated to report cases of sexual violence to the Title IX office. "
+  },
+
+/*  {
     question: "What is a Title IX coordinator?",
     answer: "The goal of a Title IX coordinator is to ensure that no person in the United States shall, on the basis of sex, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any education program or activity receiving Federal financial assistance."
+  } */
+  {
+    question: "What is the role of the Confidential Victim Advocate?",
+    answer: "The confidential victim advocate offers support and guidance for survivors and victims of sexual violence. Survivors will be made aware of resources and reporting options so they can make the best steps for themselves moving forward."
   }
   // {
   //   id: "",

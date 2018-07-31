@@ -3,14 +3,14 @@ export default [
     name: "Center for Women, Gender & Sexuality",
     phone: "(508) 910-6567",
     otherPhone:[
-      { desc: "Direct Line To Mrs. Harris", phone: "(508) 910-6568" },
-      { desc: "Direct Line To Mrs. Martins", phone: "(508) 910-6569" }
+      { desc: "Direct Line to Confidential Victim Advocate, Jess Harris ", phone: "(508) 910-6568", email:"jessica.harris@umassd.edu"}
+      /*{ desc: "Direct Line To Mrs. Martins", phone: "(508) 910-6569" }*/
     ],
     location: "Campus Center, Suite 207 (Top Floor)",
     geolocation: "41.628822, -71.004487",
     hours: "Mon-Fri 9am-5pm",
     desc: [
-      "Offers resources and support for students, including women’s and LGBT issues.",
+      "Offers resources and support for students, including women’s and LGBTQIA issues.",
       "Your case is kept fully confidential.",
       "Coordinates campus initiatives to prevent sexual assault and intimate partner violence.",
       "Aims at eliminating barriers, diminishing prejudices, and creating a supportive climate and space for all."
@@ -23,7 +23,9 @@ export default [
     geolocation: "41.628445, -71.004563",
     hours: "Mon-Fri 8am-5pm",
     desc: [
+      "Alternate Phone Number: (508) 999-8650",
       "Provides individual, couples and group counseling, and psychiatric services to help students cope with emotional, interpersonal, and academic concerns.",
+      "Crisis Hours are available 1-4pm at the Counseling Center in case of emergency"
     ]
   },
   {

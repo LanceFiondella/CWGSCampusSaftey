@@ -1,6 +1,6 @@
 export default [
   {
-    name: "UMass Dartmouth: Department of Public Saftey",
+    name: "UMass Dartmouth Campus Police",
     address: "285 Old Westport Road - Power Plant Building, Dartmouth, MA, 02747",
     phone: "(508) 999-9191",
     nonEmergencyPhone: [

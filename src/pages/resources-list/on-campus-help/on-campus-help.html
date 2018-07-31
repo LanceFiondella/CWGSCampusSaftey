@@ -17,8 +17,9 @@
         <br>
         <h2 text-center><b>Other Phone Numbers:</b></h2>
         <div *ngFor="let phone of resource.otherPhone" class="resource">
-          <h2 *ngIf="phone.desc" text-center><span class="underline">Desc:</span> {{phone.desc}}</h2>
+          <h2 *ngIf="phone.desc" text-center><span class="underline"></span> {{phone.desc}}</h2>
           <h2 text-center><span class="underline">Phone #:</span> <a [href]="this.nativeDeviceFeatures.onOpenDialer(phone.phone)">{{ phone.phone }}</a></h2>
+          <h2 text-center><span class="underline">Email:</span> {{ phone.email }}</h2>
         </div>
       </div>
       <h2 text-center ><b>Hours:</b><br>{{ resource.hours }}</h2>
