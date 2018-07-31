@@ -1,6 +1,7 @@
 export interface OnCampusHelp{
   name: string;
   phone: string;
+  email: string;
   otherPhone?: {
     desc: string,
     phone: string,
