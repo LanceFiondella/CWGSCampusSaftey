@@ -3,7 +3,7 @@ export default [
     name: "Center for Women, Gender & Sexuality",
     phone: "(508) 910-6567",
     otherPhone:[
-      { desc: "Direct Line to Confidential Victim Advocate, Jess Harris ", phone: "(508) 910-6568", email:"jessica.harris@umassd.edu"}
+      { desc: "Direct Line to Confidential Victim Advocate, Jessica Harris ", phone: "(508) 910-4584", email:"jessica.harris@umassd.edu"}
       /*{ desc: "Direct Line To Mrs. Martins", phone: "(508) 910-6569" }*/
     ],
     location: "Campus Center, Suite 207 (Top Floor)",

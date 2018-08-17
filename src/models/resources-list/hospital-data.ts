@@ -10,7 +10,7 @@ export default [
     ],
     hours: "24 Hours a day, 7 Days a week",
     desc: [
-      "Recommended because there are Sexual Assault Nurse Examiners.",
+      "Recommended due to the availability of Sexual Assault Nurse Examiners.",
     ]
   },
   {
@@ -22,5 +22,8 @@ export default [
    /*   { desc: "Social Services", phone: "508-973-5995" }*/
     ],
     hours: "24 Hours a day, 7 Days a week",
+    desc: [
+      "Recommended due to the availability of Sexual Assault Nurse Examiners.",
+    ]
   },
 ];

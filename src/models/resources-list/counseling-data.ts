@@ -24,6 +24,7 @@ export default [
   {
     name: "The Women's Center Emergency Hotline",
     phone: "(508) 999-6636",
+    address: "",
     hours: "24 Hours a day",
     desc: ["Provides free and confidential 24-hour easily accessible services to those in need."]
   }

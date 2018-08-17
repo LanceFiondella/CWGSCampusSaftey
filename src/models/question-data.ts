@@ -25,12 +25,12 @@ export default [
    answer: "Sexual assault can happen even if the parties are in a relationship. Consent is always required.",
   },
   {
-    question: "Who can I talk to besides law enforcement?",
-    answer: "You can speak to the confidential victim advocate for more information about your options and resources, or you can speak with the Title IX office if you would like to report a case to the University."
+    question: "Who can I make a formal report with?",
+    answer: "You can speak to the confidential victim advocate (508-910-4584) for more information about your options and resources, before you move forward to a formal report. If you want to make a formal report without talking with a victim advocate, you may report to the UMass Dartmouth police station or the Title IX office."
   },
   {
-    question: "What is meant by victim confidentiality?",
-    answer: "The confidential victim advocate offers support and guidance for survivors and victims of sexual violence. Survivors will be made aware of resources and reporting options so they can make the best steps for themselves moving forward. Most staff members at the counseling center, health services, and the center for religious and spiritual life are not mandated to report cases of sexual violence to the Title IX office. All other faculty and staff must report any case of sexual violence to the Title IX office to be investigated."
+    question: "Who can I speak with in confidentiality?",
+    answer: "The confidential victim advocate (508-910-4584) offers support and guidance for survivors and victims of sexual violence. Survivors will be made aware of resources and reporting options so they can make the best steps for themselves moving forward. Most staff members at the counseling center, health services, and the center for religious and spiritual life are not mandated to report cases of sexual violence to the Title IX office. All other faculty and staff must report any case of sexual violence to the Title IX office to be investigated."
   },
   {
     question: "What happens if I talk to a faculty or staff member about the sexual violence I experienced?",
@@ -43,7 +43,7 @@ export default [
   } */
   {
     question: "What is the role of the Confidential Victim Advocate?",
-    answer: "The confidential victim advocate offers support and guidance for survivors and victims of sexual violence. Survivors will be made aware of resources and reporting options so they can make the best steps for themselves moving forward."
+    answer: "The confidential victim advocate (508-910-4584) offers support and guidance for survivors and victims of sexual violence. Survivors will be made aware of resources and reporting options so they can make the best steps for themselves moving forward."
   }
   // {
   //   id: "",
